@@ -24,31 +24,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!--r-->
 </div><!--c-->
 
-<!-- ******************* Hero Content ******************* -->
-
-<?php $heroImage = get_field('background_image', '928');?>
-
-<div class="wrapper-hero mb3" style="background-image: url(<?php echo $heroImage['url']; ?>);">
-
-    <div class="container">
-    
-        <div class="row">
-                
-            <div class="col-12 wrapper-hero__content text-center">       
-                
-                <h1 class="heading heading__xl heading__light font800">Order Complete</h1>            
-       
-            </div>       
-                
-        </div>
-    
-    </div>
-
-    
-</div>
-
-<!-- ******************* Hero Content END ******************* -->
-
 <div class="container">
     
     <div class="row">

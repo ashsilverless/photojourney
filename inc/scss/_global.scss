@@ -44,14 +44,11 @@ a {
         vertical-align: bottom;
         transition:all 0.5s ease;
     }
-    
-    &:hover i {
-        margin-left: 5px;
-    }
 }
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 .heading {
