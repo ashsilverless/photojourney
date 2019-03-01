@@ -38,7 +38,7 @@ get_header();?>
                     
                 </div>
             
-                <?php if( get_sub_field('read_more_copy') ): ?>
+                <?php if( get_sub_field('read_more') ): ?>
                 
                     <a class="trigger-expand">Read More</a>    
                 
@@ -46,11 +46,11 @@ get_header();?>
             
                 <div class="expanding-copy__more">
                     
-                    <?php the_sub_field('read_more_copy'); ?>          
+                    <?php the_sub_field('read_more'); ?>          
                     
                 </div>    
             
-                <?php if( get_sub_field('read_more_copy') ): ?>
+                <?php if( get_sub_field('read_more') ): ?>
             
                     <a class="trigger-collapse hide">Read Less</a>    
                 
@@ -166,9 +166,10 @@ get_header();?>
                             
                             <div class="sidebar sticky">
                             
-                                <h3 class="heading heading__md"><?php the_sub_field('day'); ?> | <?php the_sub_field('location'); ?></h3>
+                                <!--<h3 class="heading heading__md"><?php the_sub_field('day'); ?> | <?php the_sub_field('location'); ?></h3>
                                 
-                                <h2 class="heading heading__sm heading__alt-color mb1"><i class="fas fa-map-marker-alt"></i> <?php the_sub_field('lat'); ?>, <?php the_sub_field('long'); ?></h2>
+                                <h2 class="heading heading__sm heading__alt-color mb1"><i class="fas fa-map-marker-alt"></i> <?php the_sub_field('lat'); ?>, <?php the_sub_field('long'); ?></h2>-->
+                                <h2 class="heading heading__md"><?php the_sub_field('title'); ?></h2>
                                 
                                 <?php the_sub_field('copy'); ?>
                             
