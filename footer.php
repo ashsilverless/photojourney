@@ -19,11 +19,11 @@
     
         <div class="row">
                 
-            <div class="col-6 offset-6 wrapper-hero__content">       
+            <div class="col-sm-6 offset-sm-6 wrapper-hero__content">       
                 
                 <h1 class="heading heading__sm heading__light"><?php the_field( 'pre_heading', 'option' );?></h1>            
                 <h3 class="heading heading__xl heading__light"><?php the_field( 'footer_heading', 'option' );?></h3>
-                <h2 class="heading heading__sm heading__light"><?php the_field( 'footer_copy', 'option' );?></h2>
+                <h2 class="heading heading__sm heading__light d-sm-block d-none"><?php the_field( 'footer_copy', 'option' );?></h2>
                
                     <a href="<?php the_field( 'footer_button_target', 'option' );?>" type="button" class="button button__prompt mt3 mb3">
                         
@@ -63,7 +63,7 @@
 
             <div class="row">
 
-                <div class="col-4 socials">
+                <div class="col-sm-4 col-6 socials">
 
                     <?php if( have_rows('social_links', 'option') ): while( have_rows('social_links', 'option') ): the_row(); ?>
 
@@ -73,7 +73,7 @@
 
                 </div>
 
-                <div class="col-4">
+                <div class="col-sm-4 col-6">
                     
                     <div class="logo-holder">
                         
@@ -170,7 +170,7 @@
 
                 </div>
 
-                <div class="col-4 socket__colophon">
+                <div class="col-sm-4 socket__colophon">
 
                     &copy; Photo Journey <?php echo date ('Y');?>
 

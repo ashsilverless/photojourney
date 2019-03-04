@@ -12,7 +12,7 @@ get_header();?>
 
 <div class="row mb3">
 
-<div class="col-4">
+<div class="col-sm-4 order-sm-1 order-2">
 	
 	<?php wp_nav_menu( array( 
     	'theme_location' => 'about-menu', 
@@ -40,7 +40,7 @@ get_header();?>
     
 </div>
 
-<div class="col-8">
+<div class="col-sm-8 order-sm-2 order-1">
 
     <?php if( get_field('download_file') ): ?>
   

@@ -13,10 +13,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">   
     <meta name="description" content="Luxury Lodge, South Central Rift, Kenya">
     <meta name="keywords" content=" ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
 	
 	<title>Photo Journey | Guided Photography Tours</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://use.typekit.net/qnr3dic.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -55,7 +55,7 @@
 
 				<div class="row">
 
-					<div class="col-3">
+					<div class="col-sm-3 col-1">
 
 						<div class="menu-trigger hamburger hamburger--collapse">
 							
@@ -69,7 +69,7 @@
 
 					</div>
 
-					<div class="col-6 brand">
+					<div class="col-sm-6 col-10 brand">
     					
     				    <?php $brandImage = get_field('logo', 'options');?>	
     				
@@ -81,7 +81,7 @@
 						
 					</div>                    
 
-                    <div class="col-3 book-now">
+                    <div class="col-sm-3 d-sm-block d-none book-now">
                         
                         <a href="http://photo-journey.local/#tickets">Book Now</a>
                     

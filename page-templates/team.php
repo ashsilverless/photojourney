@@ -19,13 +19,13 @@ get_header();?>
     
     <div class="row mb3">
         
-        <div class="col-5 offset-1">
+        <div class="col-sm-5 offset-sm-1 col-3">
             
             <img src="<?php the_sub_field('team_image'); ?>"/>
         
         </div>
 
-        <div class="col-5">
+        <div class="col-sm-5 col-9">
             
             <h3 class="heading heading__md"><?php the_sub_field('name'); ?></h3>
             

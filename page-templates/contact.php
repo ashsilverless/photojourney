@@ -12,7 +12,7 @@ get_header();?>
 
     <div class="row">
     
-        <div class="col-5 offset-1">
+        <div class="col-sm-5 offset-sm-1 mb2">
             
             <h3 class="heading heading__sm">Got A Question for us?</h3>
             
@@ -28,7 +28,7 @@ get_header();?>
         
         </div>
     
-        <div class="col-5">
+        <div class="col-sm-5">
             
             <?php echo do_shortcode('[contact-form-7 id="1325" title="Untitled"]');?>    
             

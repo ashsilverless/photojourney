@@ -47,7 +47,7 @@ get_header();?>
          
         <a href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>" class="post-image"><img src="<?php echo $postImage[0];?>"/></a>         
         
-        <h2 id="post-<?php the_ID(); ?>" class="heading">
+        <h2 id="post-<?php the_ID(); ?>" class="heading heading__md">
 
             <a href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
         

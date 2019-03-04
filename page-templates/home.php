@@ -16,7 +16,7 @@ get_header();?>
     
         <div class="row">
                 
-            <div class="col-6 offset-6 wrapper-hero__content">       
+            <div class="col-sm-6 offset-sm-6 wrapper-hero__content">       
                 
                 <h1 class="heading heading__sm heading__light font800"><?php the_field( 'pre_hero_heading' );?></h1>            
                 <h3 class="heading heading__xl heading__light"><?php the_field( 'hero_heading' );?></h3>
@@ -50,7 +50,7 @@ get_header();?>
 
     <div class="row">
 
-        <div class="col-5 offset-1">
+        <div class="col-sm-5 offset-sm-1 d-sm-block d-none">
             
             <div class="text-area__one">
            
@@ -73,7 +73,7 @@ get_header();?>
     
         </div>
    
-        <div class="col-5">
+        <div class="col-sm-5">
             
             <div class="text-area__two">
                 
@@ -124,7 +124,7 @@ get_header();?>
 
     <div class="row">
     
-        <div class="col-10 offset-1">
+        <div class="col-sm-10 offset-sm-1">
             
             <?php $learnImage = get_field('learn_more_image');?>           
            
@@ -140,7 +140,7 @@ get_header();?>
 
     <div class="row"> 
         
-        <div class="col-8 offset-2">
+        <div class="col-sm-8 offset-sm-2">
             
             <div class="learn-more__content">   
 
@@ -231,7 +231,7 @@ get_header();?>
                 
                 <h4 class="heading heading__sm font400 mb0">Prices From</h4>
                 
-                <p class="mb0">£999 <span class="heading heading__light font200">*</span></p>    
+                <p class="mb0"><?php the_field('tour_cost'); ?> <span class="heading heading__light font200">*</span></p>    
             
             </div>                  
 
@@ -253,8 +253,10 @@ get_header();?>
             </div>        
 
             <div class="ticket__deposit">
-
-                <h4 class="heading heading__xl font400 mb0">£99</h4>
+<?php 
+    $product = wc_get_product(  );
+    $price = $product->get_price();?>
+                <h4 class="heading heading__xl font400 mb0">£<?php echo $price;?></h4>
            
             </div>            
                     

@@ -54,7 +54,7 @@ get_header();
 
     <div class="row">
         
-        <div class="col-8">
+        <div class="col-sm-8">
     
             <article class="news mt2">
         
@@ -69,7 +69,7 @@ get_header();
     
         </div>
         
-        <div class="col-4">
+        <div class="col-sm-4">
         
             <?php $ctaImage = get_field('image', 'options');?>
         

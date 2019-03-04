@@ -48,14 +48,14 @@ if( have_rows('body_content') ):
 
         <div class="row mb3">
  
-            <div class="col-6">              
+            <div class="col-sm-6 mb2">              
                 
                 <img src="<?php the_sub_field('image');?>"/>
             
             </div>
  
              
-            <div class="col-6">              
+            <div class="col-sm-6">              
                 
                 <h2 class="heading heading__lg mt0"><?php the_sub_field('heading');?></h2>
                 
