@@ -65,6 +65,10 @@ img {
       color: $brand-dark-grey;
     }
     
+    &__normal-case {
+        text-transform: none;
+    }
+    
     &__xl {
         font-size: 4em;
         line-height: 0.75em;

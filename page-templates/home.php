@@ -20,7 +20,7 @@ get_header();?>
                 
                 <h1 class="heading heading__sm heading__light font800"><?php the_field( 'pre_hero_heading' );?></h1>            
                 <h3 class="heading heading__xl heading__light"><?php the_field( 'hero_heading' );?></h3>
-                <h2 class="heading heading__sm heading__light"><?php the_field( 'hero_copy' );?></h2>
+                <h2 class="heading heading__sm heading__light heading_normal-case font200"><?php the_field( 'hero_copy' );?></h2>
                
                     <a href="#tickets" type="button" class="button button__prompt mt3">
                         
