@@ -63,7 +63,7 @@
 }
 
 @mixin dropShadow { 
-  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.4);
 }
 
 @mixin blackGrad {

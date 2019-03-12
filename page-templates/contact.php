@@ -16,7 +16,7 @@ get_header();?>
             
             <h3 class="heading heading__sm">Got A Question for us?</h3>
             
-            <p>Drop us an email, find us on social or fire us a message.  Whichever way you chose, we'll get back to you as soon as we possibly can.</p>
+            <p>Drop us an email, find us on social or fire us a message.  Whichever way you choose, we'll get back to you as soon as we possibly can.</p>
             
             <a href="mailto:info@photojourney.co.uk">info@photojourney.co.uk</a>
 

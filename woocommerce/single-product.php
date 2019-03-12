@@ -56,7 +56,7 @@ get_header(); ?>
 
     <div class="row">
             
-        <div class="col-6">       
+        <div class="col-md-6 order-md-1 order-2">       
 
             <h3 class="heading heading__md mb1">Itinerary</h3>
 
@@ -78,7 +78,7 @@ get_header(); ?>
             
         </div>       
 
-        <div class="col-6">      
+        <div class="col-md-6 order-md-2 order-1">      
  
             <div class="booking-panel">
                 

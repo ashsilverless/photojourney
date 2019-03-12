@@ -548,7 +548,8 @@ border-right: none;
         height: 250px;
         min-width: 200px;
         margin: 0 8px 8px 0; /* Some gutter */   
-    
+        transition: box-shadow 0.5s ease;
+        
         &:nth-of-type(4n+1) {
           width: 30%;
         }
@@ -575,6 +576,10 @@ border-right: none;
         
         &:nth-of-type(6n+1) {
           width: 19%;
+        }
+        
+        &:hover {
+            @include dropShadow;
         }              
     }
 }
