@@ -38,7 +38,7 @@ get_header();?>
                     
                 </div>
             
-                <?php if( get_sub_field('read_more') ): ?>
+                <?php if( get_sub_field('read_more_copy') ): ?>
                 
                     <a class="trigger-expand">Read More</a>    
                 
@@ -46,11 +46,11 @@ get_header();?>
             
                 <div class="expanding-copy__more">
                     
-                    <?php the_sub_field('read_more'); ?>          
+                    <?php the_sub_field('read_more_copy'); ?>          
                     
                 </div>    
             
-                <?php if( get_sub_field('read_more') ): ?>
+                <?php if( get_sub_field('read_more_copy') ): ?>
             
                     <a class="trigger-collapse hide">Read Less</a>    
                 
