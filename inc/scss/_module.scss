@@ -1097,7 +1097,8 @@ input#billing_address_1::placeholder {
 }
 
 .toggle {
-    padding-left: 3em;
+    padding: 1em 1em 0;
+    background: hsl(0, 0%, 100%);
 
     &__question {
     
@@ -1133,6 +1134,7 @@ input#billing_address_1::placeholder {
 
     .toggle__question i {
         transform: rotate(0deg);
+        color: hsl(359, 100%, 44%);
     }
 
     .toggle__answer {

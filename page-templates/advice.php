@@ -77,11 +77,10 @@ get_header();?>
 		while ( have_rows('faq') ) : the_row(); 
     $i++;?>
     
-<div class="toggle mb2">
+<div class="toggle mb1">
 
   <div class="toggle__question" role="tab">    
-      <p class="headingSupporting headingSupporting__sm">
-        <span class="headingSupporting__lightWeight">Q<?php echo $i; ?></span>
+      <p class="headingSupporting headingSupporting__sm font400 mb0">
         <?php the_sub_field('question'); ?>
         <i class="fas fa-times close-toggle"></i>
       </p>

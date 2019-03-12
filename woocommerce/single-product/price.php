@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
-
+<p class="heading__sm font200">From <?php the_field('tour_cost');?> Per Person</p>
 <h6 class="heading heading__xs font400 mt1" style="display:block;">Secure <strong>Your</strong> Place Now</h6>
 <p class="heading heading__xl font200 mb0"><?php echo $product->get_price_html(); ?></p>
 <h6 class="heading heading__xs font200 mt0 mb2">Deposit Per Person</h6>
