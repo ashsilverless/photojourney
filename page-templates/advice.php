@@ -80,7 +80,7 @@ get_header();?>
 <div class="toggle mb1">
 
   <div class="toggle__question" role="tab">    
-      <p class="headingSupporting headingSupporting__sm font400 mb0">
+      <p class="headingSupporting headingSupporting__sm font400 mb1">
         <?php the_sub_field('question'); ?>
         <i class="fas fa-times close-toggle"></i>
       </p>
