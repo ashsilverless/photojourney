@@ -23,7 +23,7 @@
                 
                 <h1 class="heading heading__sm heading__light"><?php the_field( 'pre_heading', 'option' );?></h1>            
                 <h3 class="heading heading__xl heading__light"><?php the_field( 'footer_heading', 'option' );?></h3>
-                <h2 class="heading heading__sm heading__light d-sm-block d-none"><?php the_field( 'footer_copy', 'option' );?></h2>
+                <h2 class="heading heading__md heading__light heading__normal-case font200 d-sm-block d-none"><?php the_field( 'footer_copy', 'option' );?></h2>
                
                     <a href="<?php the_field( 'footer_button_target', 'option' );?>" type="button" class="button button__prompt mt3 mb3">
                         
