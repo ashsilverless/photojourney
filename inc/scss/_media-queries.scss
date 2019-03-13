@@ -4,13 +4,6 @@
 
 @media only screen and (max-width: 1200px) {
 
-body:before {
-  content: 'LARGE';
-  position: fixed;
-  z-index: 9999;
-  top:0; 
-}
-
 body {
     font-size: 0.85em;
 }
@@ -28,18 +21,19 @@ body {
 /*===========MEDIUM (992px)==========*/
 
 @media only screen and (max-width: 992px) {
-
-body:before {
-    content: 'MEDIUM';
-    position: fixed;
-    z-index: 9999;
-    top:0;
-  }
   
  /*---GLOBALS---*/ 
 
 body {
     font-size: 0.75em;
+}
+
+.button {
+    
+    &:after,
+    &:before {
+        display: none;
+    }
 }
  
  /*---HEADER---*/
@@ -56,19 +50,54 @@ body {
 
 @media only screen and (max-width: 768px) {
 
-body:before {
-    content: 'SMALL';
-    position: fixed;
-    z-index: 9999;
-    top:0;
-}
-
 /*---GLOBALS---*/
 
 /*---HEADER---*/
 
 /*---CONTENT---*/
- 
+
+.coupon {
+  display: block;
+  width: 100%;
+  float: none;
+  margin-bottom: 2em;
+}
+
+#coupon_code {
+  font-size: 1.5em;
+  margin: 0 1em 1em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.actions .button {
+  float: none;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.woocommerce-billing-fields__field-wrapper,
+.woocommerce-checkout-review-order,
+.form-row {
+  display: block;
+}
+
+.woocommerce-input-wrapper .input-text {
+  width: 100%;
+}
+
+.woocommerce-checkout-review-order-table {
+    margin-bottom: 2em;
+}
+
+.woocommerce-terms-and-conditions-wrapper {
+    text-align: center;
+}
+
+.place-order .button {
+    width:100%;
+    }
 
   
 /*---FOOTER---*/
@@ -80,15 +109,9 @@ body:before {
 /*===========EXTRA SMALL (576px)==========*/
 
 @media only screen and (max-width: 576px) {
-body:before {
-    content: 'EXTRA SMALL';
-    position: fixed;
-    z-index: 9999;
-    top:0;
-  }
 
 body {
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
   
 /*---GLOBALS---*/
@@ -100,6 +123,11 @@ body {
 }
 
 /*---CONTENT---*/
+
+.shop_table, .woocommerce {
+  width: 100%;
+  font-size: 0.9em;
+}
 
 .wrapper-hero.home {
     align-items: flex-end;
@@ -183,48 +211,6 @@ a.next-section {
     margin:0 15px 2em;
 }
 
-.coupon {
-  display: block;
-  width: 100%;
-  float: none;
-  margin-bottom: 2em;
-}
-
-#coupon_code {
-  font-size: 1.5em;
-  margin: 0 1em 1em 0;
-  text-align: center;
-  width: 100%;
-}
-
-.actions .button {
-  float: none;
-  display: block;
-  width: 100%;
-  margin: 0;
-}
-
-.woocommerce-billing-fields__field-wrapper,
-.woocommerce-checkout-review-order,
-.form-row {
-  display: block;
-}
-
-.woocommerce-input-wrapper .input-text {
-  width: 100%;
-}
-
-.woocommerce-checkout-review-order-table {
-    margin-bottom: 2em;
-}
-
-.woocommerce-terms-and-conditions-wrapper {
-    text-align: center;
-}
-
-.place-order .button {
-    width:100%;
-    }
 
 /*---FOOTER---*/
 
