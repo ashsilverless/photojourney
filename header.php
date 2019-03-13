@@ -83,7 +83,7 @@
 
                     <div class="col-sm-3 d-sm-block d-none book-now">
                         
-                        <a href="http://photo-journey.local/#tickets">Book Now</a>
+                        <a href="/book-now">Book Now</a>
                     
                     </div>
 
