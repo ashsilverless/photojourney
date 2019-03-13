@@ -43,7 +43,9 @@ jQuery(document).ready(function( $ ) {
 $(window).scroll(function() {
   var wScroll = $(this).scrollTop();
 
-
+    $(".rear-image").css({
+    transform: "translate(0px, " + wScroll / 12 + "%)"
+  });
 
     $(".front-image").css({
     transform: "translate(0px, " + wScroll / 15 + "%)"
