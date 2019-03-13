@@ -246,6 +246,7 @@ footer .wrapper-hero {
     }
 
     &__places {
+        position: relative;
         grid-area: places; 
         display: grid;
         grid-template-columns: min-content auto;
@@ -260,6 +261,17 @@ footer .wrapper-hero {
             align-self: end;
             margin-bottom: 2em;
         }    
+        
+        .buy-prompt {
+            position: absolute;
+            width: 5em;
+            top: 1em;
+            left: -4em;
+            text-align: right;
+            padding: 0;
+            color: hsl(0, 0%, 26%);
+            font-weight: 400;    
+        }
     }
 
     &__empty {

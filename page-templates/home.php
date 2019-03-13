@@ -213,7 +213,17 @@ get_header();?>
             
             <div class="ticket__places"><?php $stock_amount = $product->get_stock_quantity();?>
                 
-                <h4 class="heading heading__xl font200 mb0"><?php echo $stock_amount; ?></h4>
+                
+                    
+                    <?php if($stock_amount <=7 )
+                        {?>
+                        
+                        <div class="buy-prompt">Hurry! Only</div>
+                        
+                        <h4 class="heading heading__xl font200 mb0">
+                          <?php echo $stock_amount; 
+                        }?>
+                        </h4>
                 
                 <p class="heading heading__xs font200 inline">Places Available</p>
 
