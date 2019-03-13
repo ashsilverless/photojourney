@@ -202,6 +202,11 @@ get_header();?>
     if ($wc_query->have_posts()) : 
         while ($wc_query->have_posts()) :
             $wc_query->the_post(); ?>     
+
+            <?php $stock_amount = $product->get_stock_quantity();?>
+
+            <?php if($stock_amount >=1 )
+                {?>
      
         <div class="ticket">                
                 
@@ -211,10 +216,8 @@ get_header();?>
             
             </div>
             
-            <div class="ticket__places"><?php $stock_amount = $product->get_stock_quantity();?>
-                
-                
-                    
+            <div class="ticket__places">
+                                    
                     <?php if($stock_amount <=7 )
                         {?>
                         
@@ -291,6 +294,8 @@ get_header();?>
             </div>    
                 
         </div><!--ticket-->      
+
+            <?php }?>
 
         <?php endwhile; wp_reset_postdata(); ?>
 
