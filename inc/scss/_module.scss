@@ -190,18 +190,8 @@ footer .wrapper-hero {
 .learn-more {
     
     &__content {
-        display: grid;
-        grid-template-columns: 50% 50%;
         padding: 2em;
         background: white;
-        
-        img {
-            grid-row: 1 / span 3;
-        }
-        
-        .copy {
-            padding-left: 2em;
-        }
     }
 }
 

@@ -150,18 +150,26 @@ get_header();?>
             
             <div class="learn-more__content">   
 
-                <?php get_template_part( 'template-parts/nepal', 'map');?> 
+                <div class="row">
+                    
+                    <div class="col-md-6 col-3">
+                        
+                        <?php get_template_part( 'template-parts/nepal', 'map');?>      
+                        
+                    </div>   
+                
+                    <div class="col-md-6 col-9">
+                       
+                         <h2 class="heading heading__lg"><?php the_field( 'learn_more_heading' );?></h2>
+                        
+                        <?php the_field( 'learn_more_copy' );?>
+                    
+                        <a href="<?php the_field( 'button_target' );?>" type="button" class="button mt1 mb1"><?php the_field( 'button_text' );?></a>       
+                        
+                    </div>    
+                    
+                </div><!--r-->
 
-                <div class="copy">
-                    
-                    <h2 class="heading heading__lg"><?php the_field( 'learn_more_heading' );?></h2>
-                    
-                    <?php the_field( 'learn_more_copy' );?>
-                
-                    <a href="<?php the_field( 'button_target' );?>" type="button" class="button mt1 mb1"><?php the_field( 'button_text' );?></a>
-                
-                </div>
-            
             </div>
         
         </div>
