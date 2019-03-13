@@ -287,8 +287,27 @@ function photojourney_social_sharing_buttons($content) {
 };
 add_filter( 'the_content', 'photojourney_social_sharing_buttons');
 
+add_action('woocommerce_before_cart_totals', 'apply_product_on_coupon');
+    function apply_product_on_coupon() {
+        global $woocommerce;
 
+        if ( ! empty( $woocommerce->cart->applied_coupons ) ) {
+             $my_coupon = $woocommerce->cart->get_coupons() ;
+             foreach($my_coupon as $coupon){
 
+                if ( $post = get_post( $coupon->id ) ) {
+                        if ( !empty( $post->post_excerpt ) ) {?>
+                            
+                            <h2>Great News!  You have the folllowing coupon applied to your purchase:</h2>
+                            
+                            <?php echo "<span class='coupon-name'><b>".$coupon->code."</b></span>";
+                            echo "<p class='coupon-description'>".$post->post_excerpt."</p>";
+                        }
+                }
+            }
+        }
+    }
 
+add_action('woocommerce_checkout_before_order_review', 'apply_product_on_coupon');
 
 
