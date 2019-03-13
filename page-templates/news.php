@@ -31,16 +31,50 @@ get_header();  /* @package Photo Journey*/ ?>
 <!-- ******************* Hero Content END ******************* -->
  
 <div class="container">
-
-<div class="row">
         
-        <?php
-        while ( have_posts() ) : the_post();
-            the_content();
-        endwhile;
-        ?>
+    <div class="post-summary">
+            
+            <?php 
+            $args = array (
+            	'post_type'              => 'post',
+            	'posts_per_page'         => '-1'
+            );
+            
+            // The Query
+            $query = new WP_Query( $args );
+            
+            // The Loop
+            if ( $query->have_posts() ) {
+            	while ( $query->have_posts() ) {
+            		$query->the_post();
+            
+            $postImage = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
+     
+            <div class="post-summary__item">
+         
+                <a href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>" class="post-image"><img src="<?php echo $postImage[0];?>"/></a>         
+                
+                <h2 id="post-<?php the_ID(); ?>" class="heading heading__md">
+        
+                    <a href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                
+                </h2>
+             
+                <p class="heading heading__xs heading__alt-color font200 mb1"><?php the_date() ?></p> 
+                <?php the_excerpt() ?>     
+                
+                <a href="<?php the_permalink() ?>" rel="bookmark" title="Link to <?php the_title_attribute(); ?>" class="">Read More</a>     
+      
+            </div>
 
-    </div>
+            <?php 	}
+            } else {
+            	// no posts found
+            }
+            // Restore original Post Data
+            wp_reset_postdata();?>
+
+        </div>
   
 </div>
  

@@ -93,7 +93,6 @@ body {
   
 /*---GLOBALS---*/
 
-
 /*---HEADER---*/
 
 .scrolled nav .brand a {
@@ -104,12 +103,16 @@ body {
 
 .wrapper-hero.home {
     align-items: flex-end;
-    padding-bottom: 6em;
+    padding-bottom: 15em;
     background-position: left center !important;
 }
 
+.wrapper-hero .front-image {
+    background-position: left center !important;    
+}
+
 a.next-section {
-    margin-bottom:5px;
+    margin-bottom:7em;
     
     &:hover:before {
         height: 0;
@@ -180,14 +183,54 @@ a.next-section {
     margin:0 15px 2em;
 }
 
+.coupon {
+  display: block;
+  width: 100%;
+  float: none;
+  margin-bottom: 2em;
+}
 
+#coupon_code {
+  font-size: 1.5em;
+  margin: 0 1em 1em 0;
+  text-align: center;
+  width: 100%;
+}
 
+.actions .button {
+  float: none;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
 
+.woocommerce-billing-fields__field-wrapper,
+.woocommerce-checkout-review-order,
+.form-row {
+  display: block;
+}
+
+.woocommerce-input-wrapper .input-text {
+  width: 100%;
+}
+
+.woocommerce-checkout-review-order-table {
+    margin-bottom: 2em;
+}
+
+.woocommerce-terms-and-conditions-wrapper {
+    text-align: center;
+}
+
+.place-order .button {
+    width:100%;
+    }
 
 /*---FOOTER---*/
 
 footer .wrapper-hero.home {
     height: 50vh;  
+    padding-bottom: 2em;
 }
 
 .partner-logos img {
