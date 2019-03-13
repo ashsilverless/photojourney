@@ -1017,6 +1017,51 @@ input#billing_address_1::placeholder {
     cursor: pointer;
 }
 
+.discount-coupon {
+    position: relative;
+    display: inline-block;
+    padding:0.5em 3em;
+    margin-bottom: 1em;
+    background:$brand-dark-grey;
+    border: 1px dashed $brand-light-grey;
+    box-shadow: 0 0 0 10px $brand-dark-grey;
+    border-radius: 5px;
+    color: white;
+    
+    &:before {
+        content: 'discount coupon';
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        background: hsl(0, 0%, 89%);
+        color: hsl(0, 0%, 46%);
+        font-size: 12px;
+        padding: 3px 8px;
+        border-bottom: 2px solid hsl(359, 100%, 44%);
+        text-transform: uppercase;
+        transform: translate(-50%);
+        white-space: nowrap;
+    }
+    
+    p {
+        margin:0;
+        font-weight: 800;
+    }
+}
+
+.cart-collaterals .shop_table tbody {
+    float: right;
+    
+    .cart-discount .amount {
+        display: none;
+    }
+    
+    a {
+        float: right;
+    }
+}
+
+
 .partner-logos {
     padding:2em;
     text-align: center;

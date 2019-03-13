@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
-	<h2 class="heading heading__xs heading__alt-color font200 text-right mt3 mb0"><?php _e( 'Deposit to Secure Places', 'woocommerce' ); ?></h2>
+	<h2 class="heading heading__xs heading__alt-color font200 text-right mt3 mb1"><?php _e( 'Deposit to Secure Places', 'woocommerce' ); ?></h2>
 
 	<table cellspacing="0" class="shop_table shop_table_responsive">
 

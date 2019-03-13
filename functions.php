@@ -298,10 +298,13 @@ add_action('woocommerce_before_cart_totals', 'apply_product_on_coupon');
                 if ( $post = get_post( $coupon->id ) ) {
                         if ( !empty( $post->post_excerpt ) ) {?>
                             
-                            <h2>Great News!  You have the folllowing coupon applied to your purchase:</h2>
+                            <div class="text-center mt2">
                             
-                            <?php echo "<span class='coupon-name'><b>".$coupon->code."</b></span>";
-                            echo "<p class='coupon-description'>".$post->post_excerpt."</p>";
+                            <h2 class="heading heading__md">Great News!</h2>
+                                <p>You have the following coupon applied to your purchase:</p>
+                            
+                            <?php echo "<div class='discount-coupon'><p>".$coupon->code."</p></div>";
+                            echo "<p class='coupon-description'>".$post->post_excerpt."</p></div>";
                         }
                 }
             }
