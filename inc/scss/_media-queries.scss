@@ -171,11 +171,13 @@ a.next-section {
     }
     
     &__places {
-        grid-template-columns: 1fr;
-        
-        .heading, p {
-            display: none;
-        }
+        grid-area: 4/1/5/4;
+        background: none;
+        text-align: right;
+        justify-content: right;
+        float: right;
+        padding: 0 1em;
+
     }
     
     &__from {
@@ -187,7 +189,7 @@ a.next-section {
     }
     
     &__location {
-      grid-area: 4/1/5/4;
+      display: none;
       }
     
     &__book {
@@ -207,6 +209,10 @@ a.next-section {
 
 }
 
+.ticket__places .buy-prompt {
+  top: 0;
+  left: 0;
+}
 .gallery a {
     min-height: 10em;
 }
