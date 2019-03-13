@@ -7,10 +7,16 @@
 get_header();?>
 
 <!-- ******************* Hero Content ******************* -->
+    <?php
+        $frontImg = get_field('background_image_front');
+        $rearImg = get_field('background_image_rear');
+    ?>
 
-<?php $heroImage = get_field('background_image');?>
+<div class="home wrapper-hero mb3">
 
-<div class="home wrapper-hero mb3" style="background-image: url(<?php echo $heroImage['url']; ?>);">
+    <div class="rear-image" style="background-image: url(<?php echo $rearImg['url']; ?>);"></div>
+
+    <div class="front-image" style="background-image: url(<?php echo $frontImg['url']; ?>);"></div>
 
     <div class="container">
     
