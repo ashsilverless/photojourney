@@ -326,4 +326,24 @@ function custom_woocommerce_auto_complete_order( $order_id ) {
     $order->update_status( 'completed' );
 }
 
+// The email function hooked that display the text
+add_action( 'woocommerce_email_order_details', 'display_applied_coupons', 10, 4 );
+function display_applied_coupons( $order, $sent_to_admin, $plain_text, $email ) {
 
+    // Only for admins and when there at least 1 coupon in the order
+    if ( ! $sent_to_admin && count($order->get_items('coupon') ) == 0 ) return;
+
+    foreach( $order->get_items('coupon') as $coupon ){
+        $coupon_codes[] = $coupon->get_code();
+    }
+    // For one coupon
+    if( count($coupon_codes) == 1 ){
+        $coupon_code = reset($coupon_codes);
+        echo '<p>'.__( 'Coupon Used: ').$coupon_code.'<p>';
+    } 
+    // For multiple coupons
+    else {
+        $coupon_codes = implode( ', ', $coupon_codes);
+        echo '<p>'.__( 'Coupons Used: ').$coupon_codes.'<p>';
+    }
+}
