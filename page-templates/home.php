@@ -218,7 +218,7 @@ get_header();?>
             
             <div class="ticket__places">
                                     
-                    <?php if($stock_amount <=7 )
+                    <?php if($stock_amount <=7 & $stock_amount >0 )
                         {?>
                         
                         <div class="buy-prompt">Hurry! Only</div>
@@ -226,6 +226,21 @@ get_header();?>
                         <h4 class="heading heading__xl font200 mb0">
                           <?php echo $stock_amount; 
                         }?>
+                        
+                        <?php if($stock_amount <=0 )
+                        {?>
+                        
+                        <div class="buy-prompt">Sold Out!</div>
+                        
+                        <h4 class="heading heading__xl font200 mb0">
+                            0
+                          <?php  }?>
+                        
+                        
+                        
+                        
+                        
+                        
                         </h4>
                 
                 <p class="heading heading__xs font200 inline">Places Available</p>
