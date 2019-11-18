@@ -230,7 +230,7 @@ get_header();?>
                         <?php if($stock_amount <=0 )
                         {?>
                         
-                        <div class="buy-prompt">Sold Out!</div>
+                        <div class="buy-prompt">Fully Booked</div>
                         
                         <h4 class="heading heading__xl font200 mb0">
                             0
