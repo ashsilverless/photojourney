@@ -205,7 +205,7 @@ get_header();?>
 
             <?php $stock_amount = $product->get_stock_quantity();?>
 
-            <?php if($stock_amount >=1 )
+            <?php if($stock_amount >=0 )
                 {?>
      
         <div class="ticket">                

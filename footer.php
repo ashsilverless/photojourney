@@ -10,56 +10,68 @@
 <footer class="footer">
 
 <div class="footer-cta">
-    
+
 <?php $footerImage = get_field('footer_image', 'option');?>
 
 <div class="home wrapper-hero" style="background-image: url(<?php echo $footerImage['url']; ?>);">
 
     <div class="container">
-    
+
         <div class="row">
-                
-            <div class="col-sm-6 offset-sm-6 wrapper-hero__content">       
-                
-                <h1 class="heading heading__sm heading__light"><?php the_field( 'pre_heading', 'option' );?></h1>            
+
+            <div class="col-sm-6 offset-sm-6 wrapper-hero__content">
+
+                <h1 class="heading heading__sm heading__light"><?php the_field( 'pre_heading', 'option' );?></h1>
                 <h3 class="heading heading__xl heading__light"><?php the_field( 'footer_heading', 'option' );?></h3>
                 <h2 class="heading heading__md heading__light heading__normal-case font200 d-sm-block d-none"><?php the_field( 'footer_copy', 'option' );?></h2>
-               
+
                     <a href="<?php the_field( 'footer_button_target', 'option' );?>" type="button" class="button button__prompt mt3 mb3">
-                        
+
                         <?php the_field( 'footer_button_text', 'option' );?><i class="fas fa-angle-right"></i>
-                        
+
                         <span><?php the_field( 'footer_button_additional_text', 'option' );?></span>
-                    
+
                     </a>
-            
-            </div>       
-                
+
+            </div>
+
         </div>
-    
+
     </div>
-    
-</div>    
-    
+
+</div>
+
 </div>
 
     <div class="container">
 
         <div class="socket">
 
-            <div class="partner-logos">
-                
-                <h4 class="heading heading__md heading__alt-color mb1">Proudly Partnered With</h4>
-                
-                    <?php 
-                if( have_rows('partner_logos', 'options') ): 
-                while ( have_rows('partner_logos', 'options') ) : the_row(); ?>        
-                
-                <img src="<?php the_sub_field('image');?>"/>    
-                
-                <?php endwhile; endif;?>
-                
-            </div>
+<div class="row partner-logos">
+    <div class="col-md-8">
+        <div class="">
+            <h4 class="heading heading__md heading__alt-color mb1">Proudly Partnered With</h4>
+                <?php
+            if( have_rows('partner_logos', 'options') ):
+            while ( have_rows('partner_logos', 'options') ) : the_row(); ?>
+            <img src="<?php the_sub_field('image');?>"/>
+            <?php endwhile; endif;?>
+        </div>
+    </div>
+<div class="col-md-4">
+    <h4 class="heading heading__md heading__alt-color mb1">Protecting You with ABTOT</h4>
+        <?php
+    if( have_rows('travel_accrediations', 'options') ):
+    while ( have_rows('travel_accrediations', 'options') ) : the_row(); ?>
+    <a href="<?php the_sub_field('link_target');?>" target="_blank">
+        <img src="<?php the_sub_field('image');?>"/>
+    </a>
+    <?php endwhile; endif;?>
+</div>
+</div>
+
+
+
 
             <div class="row">
 
@@ -74,11 +86,11 @@
                 </div>
 
                 <div class="col-sm-4 col-6">
-                    
+
                     <div class="logo-holder">
-                        
+
                         <a href="https://silverless.co.uk">
-                            
+
                             <svg version="1.0" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                viewBox="0 0 568.5 122.6" enable-background="new 0 0 568.5 122.6" xml:space="preserve" title="Created by Silverless">
                                 <g id="silverless">
@@ -163,9 +175,9 @@
                                     l5.2-9.6h6.4L466.3,28.5z"/>
                                 </g>
                             </svg>
-                        
+
                         </a>
-                    
+
                     </div>
 
                 </div>
@@ -174,9 +186,9 @@
 
                     &copy; Photo Journey <?php echo date ('Y');?>
 
-                    <a href="">Terms</a>
+                    <a href="/terms-conditions">Terms</a>
 
-                    <a href="">Privacy</a>
+                    <a href="/privacy">Privacy</a>
 
                 </div>
 
