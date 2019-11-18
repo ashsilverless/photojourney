@@ -126,6 +126,15 @@
             margin-left: 0.5em;  
         } 
     }
+    
+    &__fully-booked {
+        background: grey;
+        pointer-events: none;
+        cursor: not-allowed;
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
 }
 
 

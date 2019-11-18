@@ -4,181 +4,300 @@ Handles import of all Sass and partials, outputting as style.css
 /*! == VARIABLES == */
 /*! == MIXINS == */
 /*! == GLOBAL == */
+/* line 2, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 html {
-  font-size: 18px; }
+  font-size: 18px;
+  overflow-y: scroll; }
 
+/* line 8, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 html,
 body {
   min-height: 100vh;
   margin: 0;
   padding: 0; }
 
+/* line 14, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 body {
-  background: #31262f;
-  font-family: "Alegreya", serif;
+  font-family: "mr-eaves-modern", sans-serif;
   font-size: 1rem;
+  font-weight: 200;
+  background: whitesmoke;
   color: #50514d; }
 
+/* line 22, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+main {
+  min-height: 100vh; }
+
+/* line 26, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 p {
-  font-weight: 300; }
+  font-size: 1.2em;
+  font-weight: 200; }
 
-strong {
-  font-weight: 600; }
-
-em {
-  font-style: italic; }
-
+/* line 31, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 a {
-  color: #fe6e4d;
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
+  display: inline-block;
+  line-height: 1.2em;
+  color: #cd381d;
   transition: color 0.3s ease; }
+  /* line 37, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   a:hover {
     text-decoration: none;
     color: #757575; }
+  /* line 42, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  a i {
+    line-height: 1.2em;
+    vertical-align: bottom;
+    transition: all 0.5s ease; }
 
+/* line 49, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
+/* line 54, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .heading {
-  font-weight: 400; }
-  .heading__caps {
-    text-transform: uppercase;
-    letter-spacing: 0.15em; }
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #cd381d; }
+  /* line 60, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .heading__light {
     color: white; }
+  /* line 64, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .heading__alt-color {
-    color: #fe6e4d; }
-  .heading__alt-color-grey {
     color: #757575; }
-  .heading__alt-font {
-    font-family: "Abril Fatface", cursive;
-    letter-spacing: 0.02em; }
+  /* line 68, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  .heading__normal-case {
+    text-transform: none; }
+  /* line 72, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .heading__xl {
-    font-size: 4.5em; }
+    font-size: 4em;
+    line-height: 0.75em; }
+  /* line 77, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .heading__lg {
-    font-size: 2.5em; }
+    font-size: 2em; }
+  /* line 81, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .heading__md {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    font-weight: 400; }
+  /* line 86, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .heading__sm {
-    font-size: 1em; }
+    font-size: 1.2em;
+    font-weight: 400; }
+  /* line 91, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .heading__xs {
     font-size: 0.75em; }
-  .heading__bold {
-    font-weight: 900; }
 
+/* line 97, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+.font200 {
+  font-weight: 200; }
+
+/* line 101, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+.font300 {
+  font-weight: 300; }
+
+/* line 105, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+.font400 {
+  font-weight: 400; }
+
+/* line 109, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+.font800 {
+  font-weight: 800; }
+
+/* line 113, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .vertical-center {
-  -ms-flex-item-align: center;
   align-self: center; }
 
+/* line 117, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .mb0 {
   margin-bottom: 0 !important; }
 
+/* line 121, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .mb05 {
   margin-bottom: 0.5em !important; }
 
+/* line 125, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .mb1 {
   margin-bottom: 1em !important; }
 
+/* line 129, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .mb2 {
   margin-bottom: 2em !important; }
 
+/* line 133, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .mb3 {
   margin-bottom: 3em !important; }
 
+/* line 137, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .mt1 {
   margin-top: 1em !important; }
 
+/* line 141, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .mt2 {
   margin-top: 2em !important; }
 
+/* line 145, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .mt3 {
   margin-top: 3em !important; }
 
+/* line 149, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .text-center {
   width: 100%;
   text-align: center; }
 
 /*===========HEADER==========*/
+/* line 157, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .site-wrapper {
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
+/* line 162, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 header {
   position: fixed;
   display: grid;
   width: 100%;
   z-index: 1000; }
 
+/* line 169, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 nav {
   position: fixed;
-  top: 0.5em;
   width: 100%;
-  font-family: "Alegreya Sans", sans-serif;
+  padding-bottom: 1em;
+  font-family: "mr-eaves-modern", sans-serif;
   z-index: 500;
-  color: white; }
+  color: white;
+  transition: background 0.5s ease; }
+  /* line 178, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   nav:before {
     content: '';
     position: absolute;
     width: 100%;
     height: 50px;
     background: #281f27;
-    top: -0.5em;
     opacity: 0;
-    -webkit-transition: opacity 0.3s ease;
-    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease; }
-  nav .brand {
-    font-family: "Abril Fatface", cursive; }
-    nav .brand a {
-      letter-spacing: 1px;
-      color: white; }
+  /* line 188, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  nav .menu-trigger {
+    position: relative;
+    margin-top: 1em;
+    z-index: 1000; }
+  /* line 196, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  nav .brand a {
+    display: block;
+    height: 4em;
+    margin-top: 1em;
+    text-align: center;
+    transition: height 0.5s ease; }
+    /* line 203, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+    nav .brand a img {
+      display: inline-block;
+      height: 100%; }
+  /* line 211, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  nav .book-now {
+    margin-top: 1em;
+    text-align: right;
+    text-transform: uppercase; }
+    /* line 216, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+    nav .book-now a {
+      color: white;
+      font-size: 1.3em;
+      font-weight: 400;
+      border: 3px solid transparent;
+      padding: 0.25em 1em;
+      transition: all 0.5s ease; }
+      /* line 224, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+      nav .book-now a:hover {
+        border-color: white;
+        background: #243c5b; }
 
-.scrolled nav:before {
-  opacity: 1; }
+/* line 232, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+.page-template-book-now .book-now {
+  display: none !important; }
 
-.nav-wrapper {
-  position: relative;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  text-align: center; }
-  .nav-wrapper__trigger {
-    position: absolute;
-    top: -40px; }
-  .nav-wrapper__menu ul {
+/* line 236, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+.scrolled nav {
+  background: #243c5b; }
+  /* line 239, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  .scrolled nav .brand a {
+    height: 2em; }
+
+/* line 245, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+.nav-menu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #243c5b;
+  /*opacity:0;*/
+  z-index: 500;
+  transition: left 0.5s ease, opacity 0.7s ease; }
+  /* line 257, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  .nav-menu.menu-open {
+    left: 0;
+    opacity: 1; }
+  /* line 262, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  .nav-menu ul {
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    padding: 0;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
     margin: 0;
-    list-style-type: none; }
-    .nav-wrapper__menu ul li a {
-      font-size: 0.75em;
-      text-transform: uppercase;
-      color: white; }
-
-.scrolled .header-inner {
-  border-bottom: 1px solid #fe6e4d; }
+    padding: 0; }
+    /* line 272, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+    .nav-menu ul li {
+      margin-bottom: 1em;
+      text-align: center; }
+      /* line 276, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+      .nav-menu ul li a {
+        color: white;
+        text-transform: uppercase;
+        font-size: 2em;
+        transition: all 0.5s ease;
+        border-left: 3px solid rgba(255, 255, 255, 0);
+        border-right: 3px solid rgba(255, 255, 255, 0); }
+        /* line 284, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+        .nav-menu ul li a:hover {
+          border-color: white;
+          padding: 0 0.5em; }
+  /* line 293, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+  .nav-menu .emphasis a {
+    padding: 0.25em 1em;
+    background: #cd381d; }
 
 /*===========BODY==========*/
 /*===========FOOTER==========*/
+/* line 307, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
 .socket {
   width: 100%;
   padding: 2em;
   font-size: 0.75em;
-  background: #fe6e4d;
-  color: white; }
+  color: #757575; }
+  /* line 313, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .socket a {
-    color: white; }
+    color: #757575; }
+  /* line 317, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .socket i {
     margin-right: 1em; }
+  /* line 321, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
   .socket__colophon {
     text-align: right; }
+    /* line 323, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
     .socket__colophon a {
       margin-left: 0.5em;
       padding-left: 0.5em;
       border-left: 1px solid #fb8d74;
-      color: white; }
+      color: #757575; }
+
+/* line 333, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_global.scss */
+.woocommerce-page .contactSocials {
+  display: none; }
 
 /*! == MODULES == */
+/* line 3, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .wrapper-hero {
   background-size: cover !important;
   /* !important added as result of rule not working inside display:grid */
@@ -186,218 +305,394 @@ nav {
   background-repeat: no-repeat !important;
   position: relative;
   display: grid;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  grid-template-rows: 100%;
   justify-content: center;
-  -ms-flex-line-pack: end;
-  align-content: end;
-  height: 70vh;
+  align-items: flex-end;
+  height: 50vh;
   z-index: 50;
-  padding-bottom: 3em; }
-  .wrapper-hero:before {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%;
-    z-index: 1;
-    opacity: 0.7; }
+  padding-bottom: 2em;
+  overflow: hidden;
+  /*&:before {
+        @include blackGrad;
+        content:'';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height:50%;
+        z-index: 1;
+        opacity: 0.7;
+    }*/ }
+  /* line 26, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .wrapper-hero.home {
+    height: 100vh;
+    align-items: center; }
+  /* line 33, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .wrapper-hero__content h3 {
+    position: relative;
+    margin: 0.5em 0 1em; }
+    /* line 37, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .wrapper-hero__content h3:before {
+      content: '';
+      position: absolute;
+      bottom: -0.5em;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: #cd381d; }
+  /* line 49, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
   .wrapper-hero .heading {
     z-index: 10;
-    -webkit-transform: translateY(0.5em);
-    -ms-transform: translateY(0.5em);
     transform: translateY(0.5em);
     opacity: 0;
-    -webkit-transition: all 5s ease;
-    -o-transition: all 5s ease;
-    transition: all 5s ease; }
+    transition: transform 3s ease, opacity 5s ease; }
 
+/* line 57, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.tabs {
+  margin-bottom: 3em; }
+  /* line 62, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .tabs__top .nav {
+    width: 100%;
+    text-align: center; }
+    /* line 66, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .tabs__top .nav li {
+      width: 33.3%;
+      padding: 1em; }
+  /* line 73, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .tabs__bottom {
+    padding: 2em;
+    background: #e3e3e3; }
+  /* line 78, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .tabs .nav-item.active {
+    background: #e3e3e3; }
+    /* line 81, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .tabs .nav-item.active .heading__alt-color {
+      color: #cd381d; }
+  /* line 86, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .tabs .heading__alt-color:hover {
+    color: #cd381d; }
+  /* line 90, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .tabs img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em; }
+
+/* line 97, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  margin-bottom: 2em; }
+
+/* line 106, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.rear-image,
+.mid-image,
+.front-image {
+  background-size: cover !important;
+  /* !important added as result of rule not working inside display:grid */
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: absolute;
+  top: 0;
+  background-position: center bottom !important;
+  height: 100%;
+  width: 100%; }
+
+/* line 120, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+footer .wrapper-hero {
+  height: calc(100vh - 150px); }
+
+/* line 126, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.single-product footer .wrapper-hero,
+.woocommerce-cart footer .wrapper-hero,
+.woocommerce-checkout footer .wrapper-hero {
+  display: none; }
+
+/* line 130, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .loaded .wrapper-hero .heading {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
   transform: translateY(0);
   opacity: 1; }
 
-.content {
-  color: #fe6e4d; }
-  .content__lead {
-    font-size: 1.3em; }
-  .content__hidden {
-    overflow: hidden;
-    max-height: 0;
-    font-family: "Alegreya Sans", sans-serif;
-    -webkit-transition: max-height 0.5s ease;
-    -o-transition: max-height 0.5s ease;
-    transition: max-height 0.5s ease; }
-    .content__hidden.show {
-      max-height: 100vh; }
+/* line 135, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.lead-copy.No p:first-of-type {
+  font-weight: 400; }
 
-a.openTrigger,
-a.closeTrigger {
+/* line 140, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.trigger-expand,
+.trigger-collapse {
   position: relative;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "mr-eaves-modern", sans-serif;
   text-transform: uppercase;
   font-size: 0.75em;
   letter-spacing: 2px;
-  color: #cfcfcf !important; }
-  a.openTrigger:before,
-  a.closeTrigger:before {
+  color: #cd381d !important; }
+  /* line 149, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .trigger-expand:hover,
+  .trigger-collapse:hover {
+    cursor: pointer; }
+
+/* line 154, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.expanding-copy {
+  overflow: hidden; }
+  /* line 157, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .expanding-copy__more {
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    overflow: hidden; }
+  /* line 163, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .expanding-copy .trigger-collapse {
+    display: none; }
+  /* line 169, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .expanding-copy.expand .expanding-copy__more {
+    max-height: 100vh; }
+  /* line 173, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .expanding-copy.expand .trigger-expand {
+    display: none; }
+  /* line 177, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .expanding-copy.expand .trigger-collapse {
+    display: block; }
+
+/* line 186, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.overlapped-image {
+  margin-bottom: -5em; }
+
+/* line 192, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.learn-more__content {
+  padding: 2em;
+  background: white; }
+
+/* line 198, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.ticket {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "title          title          places        empty"                                         "from        to             cost            deposit"                                         "location   location    location  book";
+  margin-bottom: 1em;
+  background: #d9d9d9;
+  border-radius: 1em;
+  transition: background 0.5s ease;
+  /*&:hover {
+        background: $brand-secondary;
+        cursor:pointer;
+        
+    .heading,
+    p {
+        color: white;
+    }         
+    
+    .button {
+        background:white;
+        color: $brand-secondary;
+    }
+        
+    }*/ }
+  /* line 212, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket:before,
+  .ticket:after {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
-    bottom: -10px;
-    left: 50%;
-    margin-left: -5px;
-    -webkit-transform: rotate(-135deg);
-    -ms-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    z-index: 5; }
-  a.openTrigger:hover,
-  a.closeTrigger:hover {
-    cursor: pointer;
-    color: white !important; }
-  a.openTrigger.hide,
-  a.closeTrigger.hide {
-    display: none; }
+    top: -1em;
+    left: 60%;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: whitesmoke; }
+  /* line 223, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket:after {
+    top: initial;
+    bottom: -1em; }
+  /* line 228, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__title {
+    grid-area: title;
+    padding: 2em 1em 1em 2em;
+    align-self: flex-end;
+    background: #cfcfcf;
+    border-radius: 10px 0 0 0;
+    border-bottom: 2px solid whitesmoke; }
+    /* line 236, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .ticket__title:after {
+      content: '';
+      position: absolute;
+      right: calc(40% - 1em);
+      top: 0;
+      height: 100%;
+      width: 10px;
+      border-right: 3px dotted whitesmoke; }
+  /* line 248, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__places {
+    position: relative;
+    grid-area: places;
+    display: grid;
+    grid-template-columns: min-content auto;
+    padding: 1em 1em 0 1em;
+    line-height: 1em;
+    background: #cfcfcf;
+    border-bottom: 2px solid whitesmoke; }
+    /* line 258, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .ticket__places p {
+      color: #757575;
+      text-align: left;
+      align-self: end;
+      margin-bottom: 2em; }
+    /* line 265, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .ticket__places .buy-prompt {
+      position: absolute;
+      width: 5em;
+      top: 1em;
+      left: -4em;
+      text-align: right;
+      padding: 0;
+      color: #424242;
+      font-weight: 400; }
+  /* line 277, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__empty {
+    grid-area: empty;
+    display: grid;
+    background: #cfcfcf;
+    border-radius: 0 10px 0 0;
+    border-bottom: 2px solid whitesmoke;
+    padding: 1em 2em 1em 2em;
+    align-content: flex-end;
+    text-align: right; }
+    /* line 287, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .ticket__empty p {
+      padding-left: 50%;
+      line-height: 1em; }
+  /* line 293, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__from {
+    grid-area: from;
+    align-self: flex-start;
+    padding: 1em 1em 1em 2em; }
+  /* line 299, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__to {
+    grid-area: to;
+    align-self: flex-start;
+    padding: 1em 1em 1em 2em; }
+  /* line 305, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__cost {
+    grid-area: cost;
+    padding: 1em;
+    align-self: flex-end; }
+  /* line 311, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__location {
+    grid-area: location;
+    padding: 0 1em 1em 2em; }
+    /* line 315, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .ticket__location .location {
+      padding-right: 5px;
+      margin-right: 5px;
+      border-right: 1px solid #bfbfbf;
+      white-space: nowrap; }
+      /* line 321, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+      .ticket__location .location:last-child {
+        border-right: none; }
+  /* line 327, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__deposit {
+    grid-area: deposit;
+    padding: 1em 2em;
+    text-align: right;
+    line-height: 1em; }
+  /* line 335, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket__book {
+    grid-area: book;
+    padding: 0 2em 1em 3em;
+    text-align: right; }
+  /* line 341, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .ticket .heading span {
+    font-size: 0.25em;
+    color: #757575; }
 
-a.closeTrigger:before {
-  bottom: initial;
-  top: -10px;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
+/* line 364, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.location {
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 1px solid #bfbfbf;
+  white-space: nowrap; }
+  /* line 370, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .location:last-child {
+    border-right: none; }
 
-.room-card {
-  margin-bottom: 5em;
-  background: white; }
-  .room-card__carousel__item {
-    background-size: cover !important;
-    /* !important added as result of rule not working inside display:grid */
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    height: 100%; }
-  .room-card__content {
-    padding: 1em; }
+/* line 375, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.inline-cta {
+  background: #d9d9d9;
+  color: #757575;
+  padding: 2em 0; }
+  /* line 380, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .inline-cta .container {
+    display: grid;
+    grid-template-columns: auto 30%;
+    align-items: center; }
 
-.room-title p:nth-of-type(1) {
-  margin-bottom: 0.25em; }
-
-.room-title p:nth-of-type(2) {
-  font-family: "Alegreya Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 0.6em;
-  letter-spacing: 1px;
-  color: #757575; }
-
+/* line 390, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .owl-carousel,
 .owl-stage-outer,
 .owl-carousel .owl-stage,
 .owl-item {
   height: 100%; }
 
+/* line 396, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .owl-carousel .owl-nav {
   position: absolute;
   top: 50%;
   width: 100%;
   margin-top: -2em; }
+  /* line 401, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
   .owl-carousel .owl-nav button {
     z-index: 2;
     position: absolute;
     font-size: 4em !important;
     color: white !important; }
+    /* line 407, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
     .owl-carousel .owl-nav button span {
       display: none; }
+    /* line 411, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
     .owl-carousel .owl-nav button:after {
       content: '';
       position: absolute;
       width: 50px;
       height: 50px;
       background: rgba(255, 255, 255, 0.3);
-      -webkit-transition: background 0.5s ease;
-      -o-transition: background 0.5s ease;
       transition: background 0.5s ease; }
+    /* line 420, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
     .owl-carousel .owl-nav button:hover:after {
       background: rgba(255, 255, 255, 0.6); }
+    /* line 424, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
     .owl-carousel .owl-nav button:before {
       content: '';
       position: absolute;
       width: 30px;
       height: 30px;
       top: 10px;
-      -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
       transform: rotate(-45deg);
       border-top: 2px solid black;
       border-left: 2px solid black;
       z-index: 5; }
+    /* line 436, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
     .owl-carousel .owl-nav button.owl-next {
       right: 50px; }
+      /* line 439, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
       .owl-carousel .owl-nav button.owl-next:before {
         right: -30px;
-        -webkit-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
         transform: rotate(135deg); }
+    /* line 444, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
     .owl-carousel .owl-nav button.owl-prev {
       left: 0; }
+      /* line 447, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
       .owl-carousel .owl-nav button.owl-prev:before {
         left: 15px; }
+    /* line 451, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
     .owl-carousel .owl-nav button:focus {
       -webkit-appearance: none;
       outline: none; }
 
-.icon-list {
-  font-family: "Alegreya Sans", sans-serif; }
-  .icon-list span {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    background-repeat: no-repeat !important;
-    vertical-align: middle;
-    opacity: 0.5;
-    background-position: right !important;
-    margin-right: 1em; }
-    .icon-list span.aircon {
-      background: url("inc/img/aircon.svg"); }
-    .icon-list span.cot {
-      background: url("inc/img/cot.svg"); }
-    .icon-list span.double-bed {
-      background: url("inc/img/double-bed.svg"); }
-    .icon-list span.ensuite {
-      background: url("inc/img/ensuite.svg"); }
-    .icon-list span.fireplace {
-      background: url("inc/img/fireplace.svg"); }
-    .icon-list span.iron {
-      background: url("inc/img/iron.svg"); }
-    .icon-list span.laundry {
-      background: url("inc/img/laundry.svg"); }
-    .icon-list span.safe {
-      background: url("inc/img/safe.svg"); }
-    .icon-list span.television {
-      background: url("inc/img/television.svg"); }
-    .icon-list span.wifi {
-      background: url("inc/img/wifi.svg"); }
-
-.full-width .icon-list,
-.half .icon-list {
-  -webkit-column-count: 2;
-  column-count: 2; }
-
+/* line 460, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .gallery {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
   margin-bottom: 5em; }
+  /* line 466, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
   .gallery a {
     background-size: cover !important;
     /* !important added as result of rule not working inside display:grid */
@@ -405,130 +700,759 @@ a.closeTrigger:before {
     background-repeat: no-repeat !important;
     position: relative;
     display: block;
-    min-height: 10em;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    min-height: 20em;
     transition: all 0.3s ease; }
+    /* line 473, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
     .gallery a:hover {
-      -webkit-transform: scale3d(1.03, 1.03, 1);
       transform: scale3d(1.03, 1.03, 1);
       position: relative;
       z-index: 500;
-      -webkit-box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.2);
       box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.2); }
-    .gallery a:after {
-      content: '';
-      background-image: url(inc/img/search-solid.svg);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(176, 76, 54, 0.69);
-      background-size: 2em;
-      background-repeat: no-repeat;
-      background-position: center;
-      opacity: 0;
-      -webkit-transition: opacity 0.5s ease;
-      -o-transition: opacity 0.5s ease;
-      transition: opacity 0.5s ease; }
-    .gallery a:hover:after {
-      opacity: 1; }
+    /* line 480, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .gallery a:nth-of-type(1) {
+      grid-area: 1/1/2/3; }
+    /* line 484, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .gallery a:nth-of-type(2) {
+      grid-area: 1/3/2/4; }
+    /* line 488, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .gallery a:nth-of-type(3) {
+      grid-area: 2/1/3/4; }
+    /* line 494, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .gallery a:nth-of-type(4),
+    .gallery a:nth-of-type(5),
+    .gallery a:nth-of-type(6) {
+      grid-area: auto; }
 
-.multi-panel {
-  margin-bottom: 5em; }
-  .multi-panel__top-section {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    padding-top: 2em;
-    background: #e3e3e3;
-    text-align: center;
-    -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    position: relative; }
-    .multi-panel__top-section .heading {
-      grid-area: 1/1/last-line/6; }
-    .multi-panel__top-section .multi-panel__trigger {
+/* line 501, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.filter-gallery {
+  margin-bottom: 3em; }
+  /* line 504, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .filter-gallery__filter {
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid #757575;
+    text-align: center; }
+    /* line 510, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__filter a {
       position: relative;
-      grid-row-start: row2;
-      grid-row-end: row2; }
-      .multi-panel__top-section .multi-panel__trigger:after {
+      margin: 0 0.5em; }
+      /* line 514, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+      .filter-gallery__filter a:after {
         content: '';
         position: absolute;
-        width: 0;
-        height: 0;
-        bottom: 0;
+        bottom: -11px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 10px;
         border-style: solid;
-        border-width: 10px 15px 0 15px;
-        border-color: #e3e3e3 transparent transparent transparent;
-        z-index: 300;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-        -webkit-transition: bottom 0.5s ease;
-        -o-transition: bottom 0.5s ease;
-        transition: bottom 0.5s ease; }
-      .multi-panel__top-section .multi-panel__trigger:hover:after, .multi-panel__top-section .multi-panel__trigger.active:after {
-        bottom: -10px; }
-      .multi-panel__top-section .multi-panel__trigger img {
-        width: auto;
-        height: 2em;
-        opacity: 0.2;
-        margin-bottom: 0.5em;
-        -webkit-transition: opacity 0.5s ease;
-        -o-transition: opacity 0.5s ease;
-        transition: opacity 0.5s ease; }
-      .multi-panel__top-section .multi-panel__trigger:hover img,
-      .multi-panel__top-section .multi-panel__trigger.active img {
-        opacity: 0.5; }
-  .multi-panel__lower-section {
-    background: #c9c9c9; }
-    .multi-panel__lower-section__panel {
-      display: grid;
-      grid-template-columns: 66% 33%;
-      min-height: 25em; }
-      .multi-panel__lower-section__panel .content {
-        -ms-flex-item-align: center;
-        align-self: center;
-        padding: 2em; }
-    .multi-panel__lower-section p {
-      color: #31262f; }
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #757575 transparent;
+        opacity: 0;
+        transition: all 0.5s ease; }
+      /* line 529, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+      .filter-gallery__filter a:hover {
+        color: #cd381d !important;
+        cursor: pointer; }
+      /* line 534, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+      .filter-gallery__filter a:hover:after {
+        opacity: 1; }
+      /* line 538, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+      .filter-gallery__filter a.mixitup-control-active {
+        color: #cd381d; }
+        /* line 542, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+        .filter-gallery__filter a.mixitup-control-active:after {
+          opacity: 1; }
+  /* line 550, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .filter-gallery__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 4px;
+    width: 100%; }
+  /* line 557, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .filter-gallery__item {
+    background-size: cover !important;
+    /* !important added as result of rule not working inside display:grid */
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    flex: auto;
+    height: 250px;
+    min-width: 200px;
+    margin: 0 8px 8px 0;
+    /* Some gutter */
+    transition: box-shadow 0.5s ease; }
+    /* line 565, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__item:nth-of-type(4n+1) {
+      width: 30%; }
+    /* line 569, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__item:nth-of-type(1n+1) {
+      width: 20%; }
+    /* line 573, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__item:nth-of-type(2n+1) {
+      width: 38%; }
+    /* line 577, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__item:nth-of-type(3n+1) {
+      width: 30%; }
+    /* line 581, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__item:nth-of-type(4n+1) {
+      width: 24%; }
+    /* line 585, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__item:nth-of-type(5n+1) {
+      width: 24%; }
+    /* line 589, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__item:nth-of-type(6n+1) {
+      width: 19%; }
+    /* line 593, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .filter-gallery__item:hover {
+      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.4); }
 
+/* line 603, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.booking-panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  background: #d9d9d9;
+  transition: background 0.5s ease;
+  border-radius: 0 20px 20px 0;
+  background: #d9d9d9; }
+  /* line 614, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel:before,
+  .booking-panel:after {
+    content: '';
+    position: absolute;
+    top: -2em;
+    left: -2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background: whitesmoke; }
+  /* line 625, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel:after {
+    top: initial;
+    bottom: -2em; }
+  /* line 633, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel .heading,
+  .booking-panel .dates,
+  .booking-panel .duration,
+  .booking-panel .type-product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1 / 5;
+    align-items: baseline; }
+  /* line 641, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel .heading,
+  .booking-panel .type-product {
+    grid-template-columns: 1fr; }
+  /* line 645, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel > .heading {
+    background: #cccccc;
+    padding: 1em 2em 1em 60px;
+    border-bottom: 2px solid white;
+    border-radius: 0 20px 0 0; }
+  /* line 654, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel .dates .heading {
+    padding-left: 60px;
+    grid-column: 1/3; }
+  /* line 659, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel .dates p {
+    grid-column: 3/5;
+    margin-bottom: 0; }
+  /* line 668, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel .duration .heading {
+    padding-left: 60px;
+    grid-column: 1/3; }
+  /* line 673, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel .duration p {
+    grid-column: 3/5; }
+  /* line 678, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel .type-product {
+    padding: 0 1em 2em 60px; }
+  /* line 682, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .booking-panel .places {
+    color: #757575; }
+
+/* line 687, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.dashed-line {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -1px;
+  height: 100%;
+  width: 5px;
+  border-left: 5px dotted whitesmoke; }
+
+/* line 697, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.exclusions-list p {
+  position: relative;
+  padding-left: 2em; }
+  /* line 701, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .exclusions-list p:before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    background: #d9d9d9;
+    position: absolute;
+    left: 0;
+    top: 0.25em; }
+
+/* line 712, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.tour-guide {
+  position: relative;
+  display: inline-grid;
+  width: 30%;
+  margin-right: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75em; }
+  /* line 721, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .tour-guide:nth-of-type(4) {
+    margin-right: 0; }
+  /* line 725, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .tour-guide img {
+    border-radius: 50%; }
+
+/* line 730, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.pull-quote {
+  margin-top: 2.5em;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #243c5b; }
+  /* line 737, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .pull-quote p {
+    text-transform: none;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 400;
+    color: #cd381d; }
+
+/* line 747, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce,
+.shop_table {
+  width: 100%; }
+
+/* line 756, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.shop_table thead,
+.product-remove,
+.product-name,
+.product-price,
+.product-quantity,
+.product-subtotal {
+  text-align: center;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #c4c4c4; }
+
+/* line 762, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.cart_item .quantity {
+  padding-top: 0.5em; }
+
+/* line 766, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce .cart_item .quantity .qty {
+  font-size: 1em; }
+
+/* line 770, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.cart_item .qty_button {
+  display: inline-block;
+  line-height: 2em;
+  width: 2em; }
+
+/* line 776, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.coupon {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 50%;
+  float: left;
+  align-items: center; }
+
+/* line 784, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.actions {
+  padding-top: 2em; }
+
+/* line 788, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.actions .button {
+  float: right; }
+
+/* line 792, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#coupon_code {
+  font-size: 1.5em;
+  margin: 0 1em 0 0;
+  text-align: center; }
+
+/* line 798, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#coupon_code::placeholder {
+  color: #c4c4c4;
+  font-size: 0.75em;
+  text-transform: uppercase; }
+
+/* line 804, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.coupon label {
+  margin-bottom: 0; }
+
+/* line 808, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.cart-collaterals {
+  margin-bottom: 200px; }
+  /* line 811, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .cart-collaterals .shop_table {
+    width: 50%;
+    float: right; }
+  /* line 818, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .cart-collaterals .cart-subtotal,
+  .cart-collaterals .order-total,
+  .cart-collaterals .cart_totals .order-total td {
+    text-align: right; }
+  /* line 822, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .cart-collaterals .woocommerce-Price-amount {
+    font-size: 2.5em;
+    color: #757575; }
+
+/* line 828, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.wc-proceed-to-checkout {
+  float: right;
+  width: 100%;
+  text-align: right; }
+  /* line 833, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .wc-proceed-to-checkout .button__prompt i {
+    /*Alignment fix*/
+    top: 7px; }
+
+/* line 838, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce-billing-fields__field-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 1em; }
+  /* line 845, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper,
+  .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper .input-text {
+    display: block;
+    width: 100%; }
+  /* line 850, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .woocommerce-billing-fields__field-wrapper .input-text {
+    padding: 0.25em 0.5em; }
+  /* line 854, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .woocommerce-billing-fields__field-wrapper label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 200; }
+
+/* line 862, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#billing_country_field {
+  grid-column: 1/2; }
+
+/* line 866, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#billing_address_1_field {
+  grid-column: 1/2; }
+
+/* line 872, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#billing_address_1_field,
+#billing_city_field,
+#billing_state_field {
+  grid-row: 3/4; }
+
+/* line 878, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#billing_phone_field,
+#billing_email_field,
+#billing_postcode_field {
+  grid-row: 4/5; }
+
+/* line 884, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#billing_company_field,
+#billing_address_2_field {
+  display: none !important; }
+
+/* line 888, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+input#billing_address_1::placeholder {
+  display: none;
+  opacity: 0; }
+
+/* line 893, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#billing_postcode_field {
+  display: block; }
+
+/* line 897, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce-input-wrapper {
+  display: block;
+  width: 100%; }
+  /* line 901, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .woocommerce-input-wrapper .input-text {
+    width: 50%; }
+
+/* line 906, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce-checkout-review-order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3em; }
+
+/* line 912, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce abbr[title] {
+  text-decoration: none; }
+
+/* line 916, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#order_comments_field label {
+  display: none; }
+
+/* line 920, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.wc_payment_methods {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 926, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce-input-wrapper .input-text::placeholder {
+  font-weight: 200;
+  padding: 0.5em; }
+
+/* line 931, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.place-order {
+  font-size: 0.75em; }
+
+/* line 935, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#stripe-payment-data iframe {
+  display: grid !important;
+  height: 2em !important;
+  align-items: center !important; }
+
+/* line 941, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#stripe-payment-data p:first-of-type {
+  display: none !important; }
+
+/* line 945, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.wc_payment_method > label {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #cd381d; }
+
+/* line 955, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#wc-stripe-cc-form .form-row {
+  display: inline-grid;
+  width: 45%; }
+  /* line 959, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  #wc-stripe-cc-form .form-row:nth-of-type(2) {
+    margin-right: 10%; }
+
+/* line 964, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#wc-stripe-cc-form .form-row-wide {
+  width: 100%; }
+
+/* line 968, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+#wc-stripe-cc-form label {
+  text-transform: uppercase;
+  margin: 1em 0 0; }
+
+/* line 974, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.product-total {
+  padding-bottom: 1em;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4; }
+
+/* line 981, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.order-total th,
+.checkout .product-name {
+  text-align: right; }
+
+/* line 985, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.order-total td {
+  text-align: center; }
+
+/* line 989, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.checkout .product-quantity {
+  border: none; }
+
+/* line 993, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce-order {
+  width: 100%; }
+
+/* line 997, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce-order-details tfoot {
+  text-align: center; }
+
+/* line 1001, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce-error {
+  color: white;
+  font-size: 1.5em;
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+  background: red;
+  text-align: center; }
+
+/* line 1011, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.woocommerce-invalid span.woocommerce-input-wrapper {
+  border: 3px solid red; }
+
+/* line 1015, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.single_add_to_cart_button.button:hover {
+  background: white !important;
+  cursor: pointer; }
+
+/* line 1020, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.discount-coupon {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 3em;
+  margin-bottom: 1em;
+  background: #757575;
+  border: 1px dashed #e3e3e3;
+  box-shadow: 0 0 0 10px #757575;
+  border-radius: 5px;
+  color: white; }
+  /* line 1031, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .discount-coupon:before {
+    content: 'discount coupon';
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    background: #e3e3e3;
+    color: #757575;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-bottom: 2px solid #e00004;
+    text-transform: uppercase;
+    transform: translate(-50%);
+    white-space: nowrap; }
+  /* line 1046, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .discount-coupon p {
+    margin: 0;
+    font-weight: 800; }
+
+/* line 1052, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.cart-collaterals .shop_table tbody {
+  float: right; }
+  /* line 1055, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .cart-collaterals .shop_table tbody .cart-discount .amount {
+    display: none; }
+  /* line 1059, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .cart-collaterals .shop_table tbody a {
+    float: right; }
+
+/* line 1065, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.partner-logos {
+  padding: 2em;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1em; }
+  /* line 1071, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .partner-logos img {
+    display: inline-block;
+    max-height: 50px;
+    margin: 0 1em; }
+
+/* line 1078, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.download {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-column-gap: 1em;
+  width: 47%;
+  margin-bottom: 1em; }
+  /* line 1085, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .download__icon {
+    font-size: 4em;
+    line-height: 1em; }
+  /* line 1090, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .download p {
+    line-height: 1em; }
+
+/* line 1097, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.body-copy p:nth-of-type(1) {
+  font-weight: 400; }
+
+/* line 1102, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.sidebar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 1107, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .sidebar-menu ul li {
+    position: relative;
+    padding-left: 2em; }
+    /* line 1111, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .sidebar-menu ul li:before {
+      content: '';
+      width: 1em;
+      height: 1em;
+      background: #d9d9d9;
+      position: absolute;
+      left: 0;
+      top: 0.1em; }
+
+/* line 1123, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.sidebar-cta {
+  background-size: cover !important;
+  /* !important added as result of rule not working inside display:grid */
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  align-items: center;
+  height: 40em;
+  margin: 2em 0 3em;
+  padding: 2em;
+  justify-content: center;
+  text-align: center; }
+  /* line 1136, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .sidebar-cta:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.4;
+    z-index: 1;
+    transition: opacity 0.5s ease; }
+  /* line 1144, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .sidebar-cta:hover:after {
+    opacity: 0.7; }
+  /* line 1150, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .sidebar-cta .heading,
+  .sidebar-cta p,
+  .sidebar-cta .button {
+    z-index: 10; }
+
+/* line 1156, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.toggle {
+  padding: 1em 1em 0;
+  background: white; }
+  /* line 1162, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .toggle__question:hover {
+    cursor: pointer; }
+  /* line 1166, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .toggle__question p {
+    position: relative; }
+    /* line 1169, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .toggle__question p span {
+      position: absolute;
+      left: -3em; }
+  /* line 1175, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .toggle__question i {
+    position: absolute;
+    right: -2em;
+    transform: rotate(45deg);
+    transition: all 0.5s ease; }
+  /* line 1183, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .toggle__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease; }
+
+/* line 1192, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.toggle.active .toggle__question i {
+  transform: rotate(0deg);
+  color: #e00004; }
+
+/* line 1197, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.toggle.active .toggle__answer {
+  max-height: 100vh; }
+
+/* line 1202, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+article.news {
+  margin-bottom: 3em; }
+  /* line 1205, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  article.news > p:first-of-type {
+    font-weight: 400; }
+
+/* line 1211, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.wp-caption {
+  max-width: 100%; }
+  /* line 1214, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .wp-caption p {
+    position: relative;
+    padding-left: 1.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: #cd381d; }
+    /* line 1221, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .wp-caption p:before {
+      content: '';
+      width: 1em;
+      height: 1em;
+      background: #d9d9d9;
+      position: absolute;
+      left: 0;
+      top: 0.1em; }
+
+/* line 1233, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.post-summary {
+  margin-bottom: 3em; }
+  /* line 1236, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+  .post-summary__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(4, min-content);
+    grid-column-gap: 2em;
+    border-bottom: 3px solid #e3e3e3;
+    padding-bottom: 1em;
+    margin-bottom: 1em; }
+    /* line 1246, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .post-summary__item:last-of-type {
+      border: none; }
+    /* line 1250, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .post-summary__item .post-image {
+      grid-row-start: 1;
+      grid-row-end: 5; }
+    /* line 1255, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .post-summary__item .heading {
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    /* line 1260, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .post-summary__item p:nth-of-type(1) {
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    /* line 1264, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .post-summary__item p:nth-of-type(2) {
+      grid-row-start: 3;
+      grid-row-end: 4; }
+    /* line 1269, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+    .post-summary__item .button {
+      width: fit-content; }
+
+/* line 1276, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .formWrapper input, .formWrapper textarea {
   width: 100%;
   border: none;
   font-size: 1.2em;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "mr-eaves-modern", sans-serif;
   padding: 0.25em 0.5em;
   margin-bottom: 1em; }
 
+/* line 1284, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .formWrapper textarea {
   height: 5em; }
 
+/* line 1287, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .formWrapper label {
   position: relative;
   display: block;
   text-transform: none;
   margin: 0;
-  font-size: 0.75em;
-  font-family: "Alegreya Sans", sans-serif;
-  letter-spacing: 0.1em; }
+  font-size: 1em;
+  font-family: "mr-eaves-modern", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+  /* line 1296, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
   .formWrapper label span {
     position: absolute;
     right: 0;
     color: #757575; }
 
+/* line 1302, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .formWrapper .extra-fields {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height .5s ease;
-  -o-transition: max-height .5s ease;
-  transition: max-height .5s ease; }
+  transition: max-height 0.5s ease; }
 
+/* line 1307, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .formWrapper .submit, .formWrapper .expand-form {
   margin: 0;
   line-height: 1em;
-  font-family: "Abril Fatface", cursive;
+  font-family: "mr-eaves-modern", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -538,193 +1462,248 @@ a.closeTrigger:before {
   padding: 1em 3em;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "mr-eaves-modern", sans-serif;
   font-weight: 600;
   font-size: 0.75em;
-  background: #fe6e4d;
+  background: #cd381d;
   color: white; }
 
-.formWrapper ::-webkit-input-placeholder {
-  font-family: "Alegreya Sans", sans-serif;
-  font-style: italic;
-  font-size: 0.75em;
-  color: grey; }
-
-.formWrapper :-ms-input-placeholder {
-  font-family: "Alegreya Sans", sans-serif;
-  font-style: italic;
-  font-size: 0.75em;
-  color: grey; }
-
-.formWrapper ::-ms-input-placeholder {
-  font-family: "Alegreya Sans", sans-serif;
-  font-style: italic;
-  font-size: 0.75em;
-  color: grey; }
-
+/* line 1321, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .formWrapper ::placeholder {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "mr-eaves-modern", sans-serif;
   font-style: italic;
   font-size: 0.75em;
   color: grey; }
 
-.contact-section {
-  padding: 2em;
-  background: #e3e3e3; }
+/* line 1330, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
+.contactSocials a {
+  margin-right: 1em;
+  font-size: 0.8em;
+  color: #243c5b; }
 
-.testimonial-slider {
-  position: relative;
-  margin-bottom: 5em;
-  font-family: "Alegreya Sans", sans-serif;
-  color: white; }
-  .testimonial-slider__item {
-    width: 80%;
-    margin: 0 auto;
-    font-style: italic;
-    text-align: center; }
-    .testimonial-slider__item .quotemarks {
-      display: inline-block;
-      font-family: "Abril Fatface", cursive;
-      color: #757575; }
-    .testimonial-slider__item span {
-      display: block;
-      font-style: normal;
-      color: #fe6e4d; }
-
+/* line 1337, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .mapboxgl-popup-content {
-  background: #fe6e4d;
+  background: #cd381d;
   color: white; }
 
+/* line 1342, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-  border-top-color: #fe6e4d; }
+  border-top-color: #cd381d; }
 
+/* line 1346, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_module.scss */
 .mapboxgl-popup-close-button {
   display: none; }
 
 /*! == COMPONENTS == */
+/* line 3, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
 .button {
-  position: relative;
-  display: inline-block;
-  padding: 1em 4em;
-  -webkit-appearance: none;
-  border: none;
+  background: #cd381d;
+  border: 0;
+  box-sizing: border-box;
+  padding: 1em 2em;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 0.75em;
-  letter-spacing: 0.08em;
-  background: #fe6e4d;
+  font-family: "mr-eaves-modern", sans-serif;
+  box-shadow: inset 0 0 0 2px transparent;
   color: white;
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease; }
-  .button:hover {
-    cursor: pointer;
-    text-decoration: none;
-    color: #fe6e4d; }
-  .button:before {
+  font-size: inherit;
+  position: relative;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  transition: color 0.25s; }
+  /* line 22, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button::before,
+  .button::after {
+    box-sizing: inherit;
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    border: 2px solid transparent;
     width: 0;
-    background: #31262f;
-    -webkit-transition: width 0.3s ease;
-    -o-transition: width 0.3s ease;
-    transition: width 0.3s ease; }
-  .button:hover:before {
-    width: 100%; }
+    height: 0; }
+  /* line 34, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button::before {
+    top: 0;
+    left: 0; }
+  /* line 40, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button::after {
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0; }
+  /* line 47, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button:hover {
+    background: white;
+    color: #243c5b; }
+  /* line 53, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button:hover::before,
+  .button:hover::after {
+    width: 100%;
+    height: 100%; }
+  /* line 58, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button:hover::before {
+    border-top-color: cyan;
+    border-right-color: cyan;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    border-top-color: #243c5b;
+    border-right-color: #243c5b; }
+  /* line 68, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button:hover::after {
+    border-bottom-color: cyan;
+    border-left-color: cyan;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+    border-bottom-color: #243c5b;
+    border-left-color: #243c5b;
+    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s; }
+  /* line 82, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
   .button span {
-    position: relative;
-    z-index: 10; }
-  .button__prompt {
-    text-align: left;
-    padding: 1em 6em 1em 1em; }
-    .button__prompt:after {
-      position: absolute;
-      top: 0.5em;
-      right: 1em;
-      content: '\f054';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 600;
-      font-size: 1.5em; }
+    display: block;
+    font-weight: 200;
+    text-transform: none;
+    font-style: italic;
+    font-size: 1.2em; }
+  /* line 90, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
   .button__ghost {
     background: transparent;
-    border: 2px solid #fe6e4d;
-    color: #fe6e4d; }
-    .button__ghost:hover {
-      color: #31262f; }
-    .button__ghost:before {
-      background: #fe6e4d; }
-  .button__fullwidth {
-    display: block;
-    text-align: center;
-    padding: 1em 2em 2em; }
-    .button__fullwidth:after {
-      top: initial;
-      bottom: 0;
-      left: 1em;
-      content: '\f078'; }
-  .button__dark-hover:hover {
-    color: #31262f; }
-  .button__dark-hover:before {
-    background: #757575; }
+    box-shadow: inset 0 0 0 2px #cd381d;
+    color: #cd381d; }
+  /* line 96, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button__prompt {
+    position: relative;
+    text-align: left;
+    padding-right: 6em;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.5em; }
+    /* line 104, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+    .button__prompt i {
+      position: absolute;
+      top: 20px;
+      right: 1em;
+      left: initial;
+      vertical-align: top;
+      font-weight: 600;
+      font-size: 3em; }
+    /* line 114, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+    .button__prompt:hover i {
+      right: 0.75em; }
+  /* line 122, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button__inline-cta i {
+    vertical-align: sub;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    margin-left: 0.5em; }
+  /* line 130, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  .button__fully-booked {
+    background: grey;
+    pointer-events: none;
+    cursor: not-allowed; }
+    /* line 134, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+    .button__fully-booked:hover {
+      cursor: not-allowed; }
 
+/* line 148, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+a.next-section {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 4em;
+  transform: translateX(-50%);
+  left: 50%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white; }
+  /* line 159, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  a.next-section:before {
+    position: absolute;
+    content: '';
+    bottom: 10px;
+    left: 50%;
+    margin-left: -4px;
+    height: 0;
+    width: 5px;
+    background: white;
+    -webkit-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+    border-radius: 50px; }
+  /* line 174, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  a.next-section:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -11px;
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 26px;
+    transform: rotate(90deg); }
+  /* line 186, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+  a.next-section:hover:before {
+    height: 30px; }
+
+/* line 191, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
 .collapsed-content {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.5s ease;
-  -o-transition: max-height 0.5s ease;
   transition: max-height 0.5s ease; }
+  /* line 196, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
   .collapsed-content.expand {
     max-height: 100vh; }
 
+/* line 201, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
+polygon#nepal {
+  animation: country-pulse 5s infinite linear; }
+
+@-webkit-keyframes country-pulse {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1.0; } }
+
+/* line 218, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
 .logo-holder {
   text-align: center;
   margin-top: -10px; }
+  /* line 222, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
   .logo-holder #logo {
     width: 80px;
     height: 30px; }
+  /* line 227, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
   .logo-holder #silverless {
     opacity: 0.6;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out; }
+    /* line 231, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
     .logo-holder #silverless path {
-      fill: white; }
+      fill: #cd381d; }
+  /* line 236, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
   .logo-holder #created {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-    -ms-transform: translateY(50px);
     transform: translateY(50px);
-    -webkit-transition: 2s opacity ease, 1s -webkit-transform ease;
-    transition: 2s opacity ease, 1s -webkit-transform ease;
-    -o-transition: 1s transform ease, 2s opacity ease;
-    transition: 1s transform ease, 2s opacity ease;
-    transition: 1s transform ease, 2s opacity ease, 1s -webkit-transform ease; }
+    transition: 1s transform ease, 2s opacity ease; }
+    /* line 241, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
     .logo-holder #created path {
-      fill: white; }
+      fill: #cd381d; }
+  /* line 246, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
   .logo-holder:hover {
     cursor: pointer; }
+    /* line 249, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
     .logo-holder:hover #silverless {
       opacity: 0.8; }
+    /* line 253, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_component.scss */
     .logo-holder:hover #created {
       opacity: 0.8;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
       transform: translateY(0); }
 
 /*! == MEDIA QUERIES == */
 /*===========LARGE (1200px)==========*/
 @media only screen and (max-width: 1200px) {
-  /*body:before {
-  content: 'LARGE';
-  position: fixed;
-  z-index: 9999;
-  top:0;
-}*/
+  /* line 7, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  body {
+    font-size: 0.85em; }
   /*---GLOBALS---*/
   /*---HEADER---*/
   /*---CONTENT---*/
@@ -733,171 +1712,186 @@ a.closeTrigger:before {
 /*---end large mq---*/
 /*===========MEDIUM (992px)==========*/
 @media only screen and (max-width: 992px) {
-  /*  body:before {
-    content: 'MEDIUM';
-    position: fixed;
-    z-index: 9999;
-    top:0;
-  }*/
   /*---GLOBALS---*/
+  /* line 27, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
   body {
-    font-size: 0.75em; }
+    font-size: 0.8em; }
+  /* line 34, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .button:after,
+  .button:before {
+    display: none; }
   /*---HEADER---*/
-  .nav-wrapper {
-    position: relative; }
-    .nav-wrapper__trigger {
-      top: -3px;
-      z-index: 999; }
-    .nav-wrapper__menu {
-      position: fixed;
-      top: 0;
-      left: -110%;
-      width: 100%;
-      height: 100vh;
-      display: grid;
-      -ms-flex-line-pack: center;
-      align-content: center;
-      z-index: 100;
-      background: #31262f;
-      -webkit-transition: left 0.5s ease;
-      -o-transition: left 0.5s ease;
-      transition: left 0.5s ease;
-      -webkit-box-shadow: 10px 0 10px -10px black;
-      box-shadow: 10px 0 10px -10px black; }
-      .nav-wrapper__menu ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        text-align: center; }
-        .nav-wrapper__menu ul li a {
-          display: block;
-          padding: 0.5em;
-          font-size: 1.75em;
-          text-transform: uppercase;
-          color: white;
-          -webkit-transform: translateX(-50px);
-          -ms-transform: translateX(-50px);
-          transform: translateX(-50px);
-          opacity: 0.3; }
-    .nav-wrapper.menu-open .nav-wrapper__menu {
-      left: 0; }
-      .nav-wrapper.menu-open .nav-wrapper__menu a {
-        -webkit-animation-name: example;
-        animation-name: example;
-        -webkit-animation-duration: 0.3s;
-        animation-duration: 0.3s;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out; }
-  .nav-wrapper li:nth-of-type(2) a {
-    -webkit-animation-duration: 0.4s !important;
-    animation-duration: 0.4s !important; }
-  .nav-wrapper li:nth-of-type(3) a {
-    -webkit-animation-duration: 0.5s !important;
-    animation-duration: 0.5s !important; }
-  .nav-wrapper li:nth-of-type(4) a {
-    -webkit-animation-duration: 0.7s !important;
-    animation-duration: 0.7s !important; }
-  .nav-wrapper li:nth-of-type(5) a {
-    -webkit-animation-duration: 0.9s !important;
-    animation-duration: 0.9s !important; }
-  @-webkit-keyframes example {
-    from {
-      -webkit-transform: translateX(-100px);
-      transform: translateX(-100px);
-      opacity: 0.3; }
-    to {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1; } }
-  @keyframes example {
-    from {
-      -webkit-transform: translateX(-100px);
-      transform: translateX(-100px);
-      opacity: 0.3; }
-    to {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1; } }
   /*---CONTENT---*/
   /*---FOOTER---*/ }
 
 /*---end medium mq---*/
 /*===========SMALL (768px)==========*/
 @media only screen and (max-width: 768px) {
-  /*  body:before {
-    content: 'SMALL';
-    position: fixed;
-    z-index: 9999;
-    top:0;
-  }*/
   /*---GLOBALS---*/
-  body {
-    font-size: 0.65em; }
+  /* line 55, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .heading__xl {
+    font-size: 3em; }
+  /* line 59, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .heading__lg {
+    font-size: 2em; }
+  /* line 63, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .heading__md {
+    font-size: 1.5em; }
+  /* line 67, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .heading__sm {
+    font-size: 1.2em; }
+  /* line 71, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .heading__xs {
+    font-size: 1em; }
   /*---HEADER---*/
-  .wrapper-hero {
-    height: 50vh; }
   /*---CONTENT---*/
+  /* line 79, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .coupon {
+    display: block;
+    width: 100%;
+    float: none;
+    margin-bottom: 2em; }
+  /* line 86, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  #coupon_code {
+    font-size: 1.5em;
+    margin: 0 1em 1em 0;
+    text-align: center;
+    width: 100%; }
+  /* line 93, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .actions .button {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0; }
+  /* line 102, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .woocommerce-billing-fields__field-wrapper,
+  .woocommerce-checkout-review-order,
+  .form-row {
+    display: block; }
+  /* line 106, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .woocommerce-input-wrapper .input-text {
+    width: 100%; }
+  /* line 110, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .woocommerce-checkout-review-order-table {
+    margin-bottom: 2em; }
+  /* line 114, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .woocommerce-terms-and-conditions-wrapper {
+    text-align: center; }
+  /* line 118, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .place-order .button {
+    width: 100%; }
   /*---FOOTER---*/ }
 
 /*---end small mq---*/
 /*===========EXTRA SMALL (576px)==========*/
 @media only screen and (max-width: 576px) {
-  /*  body:before {
-    content: 'EXTRA SMALL';
-    position: fixed;
-    z-index: 9999;
-    top:0;
-  }*/
   /*---GLOBALS---*/
-  body {
-    font-size: 0.5em; }
   /*---HEADER---*/
-  nav {
-    padding-top: 1em; }
-  nav .brand {
-    display: none; }
-  .telephone {
-    margin-top: 3px; }
-  nav .brand,
-  .telephone {
-    font-size: 1.5em; }
-  body .hamburger-inner span {
-    top: -12px; }
-  .nav-wrapper__menu ul li a {
-    font-size: 3em; }
+  /* line 137, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .scrolled nav .brand a {
+    height: 3.5em; }
   /*---CONTENT---*/
-  #kglogo {
-    max-width: 150px; }
-  .room-card__carousel {
-    min-height: 20em; }
-  .three-quarters .icon-list {
-    -webkit-column-count: 2;
-    column-count: 2; }
-  .multi-panel__lower-section__panel {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto; }
-  /*---FOOTER---*/ }
+  /* line 143, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .shop_table, .woocommerce {
+    width: 100%;
+    font-size: 0.9em; }
+  /* line 148, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .wrapper-hero.home {
+    align-items: flex-end;
+    padding-bottom: 9em;
+    background-position: left center !important; }
+  /* line 154, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .wrapper-hero .front-image {
+    background-position: left center !important; }
+  /* line 158, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  a.next-section {
+    margin-bottom: 3em; }
+    /* line 161, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    a.next-section:hover:before {
+      height: 0; }
+  /* line 166, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .ticket {
+    grid-template-rows: repeat(5, auto); }
+    /* line 169, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .ticket__title {
+      grid-area: 1/1/2/4; }
+    /* line 173, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .ticket__places {
+      grid-area: 4/1/5/4;
+      background: none;
+      text-align: right;
+      justify-content: right;
+      float: right;
+      padding: 0 1em; }
+    /* line 183, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .ticket__from {
+      grid-area: 2/1/3/3; }
+    /* line 187, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .ticket__to {
+      grid-area: 3/1/4/3; }
+    /* line 191, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .ticket__location {
+      display: none; }
+    /* line 195, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .ticket__book {
+      grid-area: 3/4/5/5;
+      align-self: flex-end; }
+    /* line 200, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .ticket__empty p {
+      padding-left: 0;
+      line-height: 1em; }
+    /* line 205, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .ticket__cost {
+      grid-area: 2/3/4/4;
+      align-self: flex-start; }
+  /* line 212, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .ticket__places .buy-prompt {
+    top: 0;
+    left: 0; }
+  /* line 216, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .gallery a {
+    min-height: 10em; }
+  /* line 220, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .post-summary__item {
+    display: block; }
+    /* line 223, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+    .post-summary__item .post-image {
+      margin-bottom: 2em; }
+  /* line 228, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .inline-cta .container {
+    grid-template-columns: 1fr; }
+  /* line 232, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .blog .post-summary__item {
+    margin: 0 15px 2em; }
+  /*---FOOTER---*/
+  /* line 239, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  footer .wrapper-hero.home {
+    height: 50vh;
+    padding-bottom: 2em; }
+  /* line 244, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .partner-logos img {
+    max-height: 20px; }
+  /* line 248, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .logo-holder {
+    text-align: right; }
+  /* line 252, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  .socket__colophon {
+    text-align: center; } }
 
 /*---end extra small mq---*/
+/*===========LOW HEIGHT FIX (900px HIGH)==========*/
+@media all and (min-width: 800px) and (max-height: 900px) {
+  /* line 262, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_media-queries.scss */
+  body {
+    font-size: 0.8em; } }
+
+/* line 1, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger {
   display: inline-block;
   left: 0;
   cursor: pointer;
-  -webkit-transition-property: opacity, -webkit-filter;
-  transition-property: opacity, -webkit-filter;
-  -o-transition-property: opacity, filter;
   transition-property: opacity, filter;
-  transition-property: opacity, filter, -webkit-filter;
-  -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
   transition-duration: 0.15s;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
   transition-timing-function: linear;
   font: inherit;
   color: inherit;
@@ -907,27 +1901,33 @@ a.closeTrigger:before {
   margin: 0;
   overflow: visible; }
 
+/* line 15, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger:hover {
   opacity: 0.7; }
 
+/* line 17, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger.is-active:hover {
   opacity: 0.7; }
 
+/* line 21, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
   background-color: white; }
 
+/* line 24, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger-box {
   width: 40px;
   height: 24px;
   display: inline-block;
   position: relative; }
 
+/* line 30, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger-inner {
   display: block;
   top: 50%;
   margin-top: -2px; }
+  /* line 35, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .hamburger-inner span {
     display: inline-block;
     position: absolute;
@@ -936,131 +1936,117 @@ a.closeTrigger:before {
     font-size: 0.75em;
     text-transform: uppercase; }
 
+/* line 46, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .is-active .hamburger-inner > span {
   display: none; }
 
+/* line 50, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 30px;
   height: 2px;
   background-color: white;
   border-radius: 4px;
   position: absolute;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
   transition-duration: 0.15s;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
   transition-timing-function: ease; }
 
+/* line 59, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger-inner::before, .hamburger-inner::after {
   content: "";
   display: block; }
 
+/* line 62, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger-inner::before {
   top: -8px; }
 
+/* line 64, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger-inner::after {
   bottom: -10px; }
 
+/* line 67, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger--collapse .hamburger-inner {
   top: auto;
   bottom: 0;
-  -webkit-transition-duration: 0.13s;
-  -o-transition-duration: 0.13s;
   transition-duration: 0.13s;
-  -webkit-transition-delay: 0.13s;
-  -o-transition-delay: 0.13s;
   transition-delay: 0.13s;
-  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  -o-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
+/* line 73, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger--collapse .hamburger-inner::after {
   top: -16px;
-  -webkit-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
-  -o-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
   transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
 
+/* line 76, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger--collapse .hamburger-inner::before {
-  -webkit-transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  -o-transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
+/* line 79, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger--collapse.is-active .hamburger-inner {
-  -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
   transform: translate3d(0, -10px, 0) rotate(-45deg);
-  -webkit-transition-delay: 0.22s;
-  -o-transition-delay: 0.22s;
   transition-delay: 0.22s;
-  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  -o-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
 
+/* line 83, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger--collapse.is-active .hamburger-inner::after {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
-  -o-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
 
+/* line 87, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .hamburger--collapse.is-active .hamburger-inner::before {
   top: 0;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  -webkit-transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -o-transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-bg, .mfp-wrap {
   position: fixed;
   left: 0;
   top: 0; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-bg, .mfp-container, .mfp-wrap {
   height: 100%;
   width: 100%; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow:after, .mfp-arrow:before, .mfp-container:before, .mfp-figure:after {
   content: ''; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-bg {
   z-index: 1042;
   overflow: hidden;
   background: #0b0b0b;
   opacity: .8; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-wrap {
   z-index: 1043;
   outline: 0 !important;
   -webkit-backface-visibility: hidden; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-container {
   text-align: center;
   position: absolute;
   left: 0;
   top: 0;
   padding: 0 8px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-container:before {
   display: inline-block;
   height: 100%;
   vertical-align: middle; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-align-top .mfp-container:before {
   display: none; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-content {
   position: relative;
   display: inline-block;
@@ -1069,39 +2055,47 @@ a.closeTrigger:before {
   text-align: left;
   z-index: 1045; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
   width: 100%;
   cursor: auto; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-ajax-cur {
   cursor: progress; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
   cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-zoom {
   cursor: pointer;
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
   cursor: zoom-in; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-auto-cursor .mfp-content {
   cursor: auto; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow, .mfp-close, .mfp-counter, .mfp-preloader {
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-loading.mfp-figure {
   display: none; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-hide {
   display: none !important; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-preloader {
   color: #CCC;
   position: absolute;
@@ -1113,15 +2107,19 @@ a.closeTrigger:before {
   right: 8px;
   z-index: 1044; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-preloader a {
   color: #CCC; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-close, .mfp-preloader a:hover {
   color: #FFF; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-s-error .mfp-content, .mfp-s-ready .mfp-preloader {
   display: none; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 button.mfp-arrow, button.mfp-close {
   overflow: visible;
   cursor: pointer;
@@ -1132,21 +2130,21 @@ button.mfp-arrow, button.mfp-close {
   outline: 0;
   padding: 0;
   z-index: 1046;
-  -webkit-box-shadow: none;
   box-shadow: none;
-  -ms-touch-action: manipulation;
   touch-action: manipulation; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-figure:after, .mfp-iframe-scaler iframe {
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   position: absolute;
   left: 0; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 button::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-close {
   width: 44px;
   height: 44px;
@@ -1162,15 +2160,19 @@ button::-moz-focus-inner {
   font-size: 28px;
   font-family: Arial,Baskerville,monospace; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-close:focus, .mfp-close:hover {
   opacity: 1; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-close:active {
   top: 1px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-close-btn-in .mfp-close {
   color: #333; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close {
   color: #FFF;
   right: -6px;
@@ -1178,6 +2180,7 @@ button::-moz-focus-inner {
   padding-right: 6px;
   width: 100%; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-counter {
   position: absolute;
   top: 0;
@@ -1187,9 +2190,11 @@ button::-moz-focus-inner {
   line-height: 18px;
   white-space: nowrap; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-figure, img.mfp-img {
   line-height: 0; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow {
   position: absolute;
   opacity: .65;
@@ -1200,12 +2205,15 @@ button::-moz-focus-inner {
   height: 110px;
   -webkit-tap-highlight-color: transparent; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow:active {
   margin-top: -54px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow:focus, .mfp-arrow:hover {
   opacity: 1; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow:after, .mfp-arrow:before {
   display: block;
   width: 0;
@@ -1217,58 +2225,72 @@ button::-moz-focus-inner {
   margin-left: 35px;
   border: inset transparent; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow:after {
   border-top-width: 13px;
   border-bottom-width: 13px;
   top: 8px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow:before {
   border-top-width: 21px;
   border-bottom-width: 21px;
   opacity: .7; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow-left {
   left: 0; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow-left:after {
   border-right: 17px solid #FFF;
   margin-left: 31px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow-left:before {
   margin-left: 25px;
   border-right: 27px solid #3F3F3F; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow-right {
   right: 0; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow-right:after {
   border-left: 17px solid #FFF;
   margin-left: 39px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-arrow-right:before {
   border-left: 27px solid #3F3F3F; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-iframe-holder {
   padding-top: 40px;
   padding-bottom: 40px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-iframe-holder .mfp-content {
   line-height: 0;
   width: 100%;
   max-width: 900px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-image-holder .mfp-content, img.mfp-img {
   max-width: 100%; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-iframe-holder .mfp-close {
   top: -40px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-iframe-scaler {
   width: 100%;
   height: 0;
   overflow: hidden;
   padding-top: 56.25%; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-iframe-scaler iframe {
   display: block;
   top: 0;
@@ -1276,17 +2298,19 @@ button::-moz-focus-inner {
   height: 100%;
   background: #000; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-figure:after, img.mfp-img {
   width: auto;
   height: auto;
   display: block; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 img.mfp-img {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 0;
   margin: 0 auto; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-figure:after {
   top: 40px;
   bottom: 40px;
@@ -1294,15 +2318,18 @@ img.mfp-img {
   z-index: -1;
   background: #444; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-figure small {
   color: #BDBDBD;
   display: block;
   font-size: 12px;
   line-height: 14px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-figure figure {
   margin: 0; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-bottom-bar {
   margin-top: -36px;
   position: absolute;
@@ -1311,6 +2338,7 @@ img.mfp-img {
   width: 100%;
   cursor: auto; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-title {
   text-align: left;
   line-height: 18px;
@@ -1318,21 +2346,27 @@ img.mfp-img {
   word-wrap: break-word;
   padding-right: 36px; }
 
+/* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-img-mobile img.mfp-img {
     padding: 0; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-img-mobile .mfp-figure:after {
     top: 0;
     bottom: 0; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-img-mobile .mfp-figure small {
     display: inline;
     margin-left: 5px; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-img-mobile .mfp-bottom-bar {
     background: rgba(0, 0, 0, 0.6);
     bottom: 0;
@@ -1340,13 +2374,15 @@ img.mfp-img {
     top: auto;
     padding: 3px 5px;
     position: fixed;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-img-mobile .mfp-bottom-bar:empty {
     padding: 0; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-img-mobile .mfp-counter {
     right: 5px;
     top: 3px; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-img-mobile .mfp-close {
     top: 0;
     right: 0;
@@ -1359,18 +2395,19 @@ img.mfp-img {
     padding: 0; } }
 
 @media all and (max-width: 900px) {
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-arrow {
     -webkit-transform: scale(0.75);
-    -ms-transform: scale(0.75);
     transform: scale(0.75); }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-arrow-left {
     -webkit-transform-origin: 0;
-    -ms-transform-origin: 0;
     transform-origin: 0; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-arrow-right {
     -webkit-transform-origin: 100%;
-    -ms-transform-origin: 100%;
     transform-origin: 100%; }
+  /* line 92, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px; } }
@@ -1380,21 +2417,25 @@ img.mfp-img {
  * Copyright 2013-2018 David Deutsch
  * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
  */
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel, .owl-carousel .owl-item {
   -webkit-tap-highlight-color: transparent;
   position: relative; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel {
   display: none;
   width: 100%;
   z-index: 1; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
   touch-action: manipulation;
   -moz-backface-visibility: hidden; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-stage:after {
   content: ".";
   display: block;
@@ -1403,11 +2444,13 @@ img.mfp-img {
   line-height: 0;
   height: 0; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0); }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-item, .owl-carousel .owl-wrapper {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -1416,22 +2459,27 @@ img.mfp-img {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0); }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-item {
   min-height: 1px;
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-touch-callout: none; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-item img {
   display: block;
   width: 100%; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
   display: none; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
   display: block; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
   cursor: pointer;
   -webkit-user-select: none;
@@ -1440,6 +2488,7 @@ img.mfp-img {
   -ms-user-select: none;
   user-select: none; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
   background: 0 0;
   color: inherit;
@@ -1447,16 +2496,20 @@ img.mfp-img {
   padding: 0 !important;
   font: inherit; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel.owl-loading {
   opacity: 0;
   display: block; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel.owl-hidden {
   opacity: 0; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel.owl-refresh .owl-item {
   visibility: hidden; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel.owl-drag .owl-item {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
@@ -1465,38 +2518,35 @@ img.mfp-img {
   -ms-user-select: none;
   user-select: none; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel.owl-grab {
   cursor: move;
-  cursor: -webkit-grab;
   cursor: grab; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel.owl-rtl {
   direction: rtl; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel.owl-rtl .owl-item {
   float: right; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .animated {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-animated-in {
   z-index: 0; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-animated-out {
   z-index: 1; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
   animation-name: fadeOut; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
 
 @keyframes fadeOut {
   0% {
@@ -1504,29 +2554,30 @@ img.mfp-img {
   100% {
     opacity: 0; } }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-height {
-  -webkit-transition: height .5s ease-in-out;
-  -o-transition: height .5s ease-in-out;
-  transition: height .5s ease-in-out; }
+  transition: height 0.5s ease-in-out; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
-  -webkit-transition: opacity .4s ease;
-  -o-transition: opacity .4s ease;
-  transition: opacity .4s ease; }
+  transition: opacity 0.4s ease; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-item .owl-lazy:not([src]), .owl-carousel .owl-item .owl-lazy[src^=""] {
   max-height: 0; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-item img.owl-lazy {
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;
   background: #000; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-video-play-icon {
   position: absolute;
   height: 80px;
@@ -1539,32 +2590,98 @@ img.mfp-img {
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: -webkit-transform .1s ease;
-  transition: -webkit-transform .1s ease;
-  -o-transition: transform .1s ease;
-  transition: transform .1s ease;
-  transition: transform .1s ease, -webkit-transform .1s ease; }
+  transition: transform 0.1s ease; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-video-play-icon:hover {
   -ms-transform: scale(1.3, 1.3);
-  -webkit-transform: scale(1.3, 1.3);
   transform: scale(1.3, 1.3); }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-video-playing .owl-video-play-icon, .owl-carousel .owl-video-playing .owl-video-tn {
   display: none; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-video-tn {
   opacity: 0;
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: opacity .4s ease;
-  -o-transition: opacity .4s ease;
-  transition: opacity .4s ease; }
+  transition: opacity 0.4s ease; }
 
+/* line 98, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
 .owl-carousel .owl-video-frame {
   position: relative;
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+/* line 102, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.related.products,
+.woocommerce-notices-wrapper {
+  display: none; }
+
+/* line 106, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+  float: none;
+  width: auto; }
+
+/* line 111, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.woocommerce div.product form.cart .button {
+  vertical-align: middle;
+  float: none;
+  font-weight: 200;
+  padding: 1em 3em;
+  background: #cd381d; }
+
+/* line 120, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  display: none;
+  margin: 0; }
+
+/* line 124, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.quantity input.qty {
+  appearance: textfield;
+  -webkit-appearance: none;
+  -moz-appearance: textfield; }
+
+/* line 130, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.woocommerce .quantity .qty {
+  width: 2em;
+  text-align: center;
+  height: 2em;
+  font-size: 1.5em;
+  border: none; }
+
+/* line 138, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.woocommerce div.product form.cart div.quantity {
+  float: left;
+  margin: 0 1em 0 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+/* line 146, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.qty_button {
+  border: none;
+  background: #e3e3e3;
+  transition: all 0.5s ease; }
+  /* line 151, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+  .qty_button:hover {
+    background: #757575;
+    color: white; }
+  /* line 157, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+  .qty_button:active,
+  .qty_button:focus {
+    outline: none; }
+
+/* line 163, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.woocommerce div.product div.summary,
+.woocommerce div.product form.cart {
+  margin-bottom: 0; }
+
+/* line 168, /Volumes/Macintosh HD/Users/ash/Local Sites/photo-journey/app/public/wp-content/themes/photojourney/inc/scss/_vendor.scss */
+.screen-reader-text {
+  display: none; }
