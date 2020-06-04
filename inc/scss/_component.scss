@@ -7,7 +7,7 @@
     padding: 1em 2em;
     text-align: center;
     text-transform: uppercase;
-    font-family: $supporting-font;  
+    font-family: $supporting-font;
     // Using inset box-shadow instead of border for sizing simplicity
     box-shadow: inset 0 0 0 2px transparent;
     color: white;
@@ -43,7 +43,7 @@
         top: 0;
         left: 0;
     }
-  
+
     &:hover {
         background: white;
         color: $brand-primary;
@@ -86,13 +86,13 @@
         font-style: italic;
         font-size: 1.2em;
     }
-    
+
     &__ghost {
         background:transparent;
         box-shadow: inset 0 0 0 2px $brand-secondary;
         color: $brand-secondary;
     }
-    
+
     &__prompt {
         position: relative;
         text-align: left;
@@ -100,7 +100,7 @@
         font-weight: 400;
         font-size: 1.2em;
         line-height: 1.5em;
-    
+
     i {
             position: absolute;
             top: 20px;
@@ -110,23 +110,23 @@
             font-weight: 600;
             font-size: 3em;
     }
-    
+
     &:hover i {
         right:0.75em;
     }
-        
+
     }
-    
+
     &__inline-cta {
-    
+
         i {
             vertical-align: sub;
             line-height: 1.2em;
             font-size: 1.5em;
-            margin-left: 0.5em;  
-        } 
+            margin-left: 0.5em;
+        }
     }
-    
+
     &__fully-booked {
         background: grey;
         pointer-events: none;
@@ -136,14 +136,6 @@
         }
     }
 }
-
-
-
-
-
-
-
-
 
 a.next-section {
     position: absolute;
@@ -155,7 +147,7 @@ a.next-section {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: white;
- 
+
      &:before {
         position: absolute;
         content: '';
@@ -170,7 +162,7 @@ a.next-section {
         transition: height 0.5s ease;
         border-radius: 50px;
     }
-    
+
     &:after {
         position: absolute;
         bottom: 0;
@@ -179,20 +171,70 @@ a.next-section {
         content: '\f054';
         font-family: 'Font Awesome 5 Free';
         font-weight: 600;
-        font-size: 26px;  
+        font-size: 26px;
         transform:rotate(90deg);
-    } 
-    
+    }
+
     &:hover:before {
         height:30px;
     }
 }
 
+.cross-site-button {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    transform: rotate(-5deg);
+    transition:all .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius:50%;
+    border:3px solid white;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    background: $brand-primary;
+    color: white;
+    box-shadow: 5px 1px 10px hsla(0, 0%, 0%, 0.6);
+    &:before {
+        @include childOverlay;
+        top:-.5rem;
+        left:-.5rem;
+        width: calc(100% + 1rem);
+        height: calc(100% + 1rem);
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+    h2 {
+        font-size: 1.5rem;
+        span {
+            display: block;
+            font-size: 1rem;
+            font-weight: 100;
+        }
+    }
+    p {
+        margin:0;
+        padding:5px 10px;
+        background:$brand-secondary;
+        font-size: .75rem;
+        text-transform: uppercase;
+
+    }
+    &:hover {
+        background:#1c2e45;
+        color: white;
+    }
+}
+
 .collapsed-content {
     max-height: 0;
-    overflow: hidden; 
+    overflow: hidden;
     transition:max-height 0.5s ease;
-    
+
     &.expand {
         max-height: 100vh;
     }
@@ -218,7 +260,7 @@ polygon#nepal {
 .logo-holder {
     text-align: center;
     margin-top: -10px;
- 
+
   #logo {
     width:80px;
     height:30px;
@@ -256,4 +298,3 @@ polygon#nepal {
     }
   }
 }
-

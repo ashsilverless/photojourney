@@ -8,15 +8,15 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
-    
+
 <head>
-    
+
  	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">   
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Guided Photography Tours, Nepal">
     <meta name="keywords" content=" ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	
+
 	<title>Photo Journey | Guided Photography Tours</title>
 
     <link rel="stylesheet" href="https://use.typekit.net/qnr3dic.css">
@@ -35,23 +35,23 @@
 
 	<?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
+<?php $typeField = get_field('site_version', 'options');?>
+<body <?php body_class($typeField); ?>>
 
 	<div id="page" class="site-wrapper">
 
 		<nav>
-            
+
             <div class="nav-menu">
-            
+
             <?php
             wp_nav_menu( array(
             'theme_location' => 'main-menu',
             'container_class' => 'mainMenu' ) );
             ?>
-            
+
             </div>
-				
+
 			<div class="container">
 
 				<div class="row">
@@ -59,33 +59,33 @@
 					<div class="col-sm-3 col-1">
 
 						<div class="menu-trigger hamburger hamburger--collapse">
-							
+
 							<div class="hamburger-box">
-								
+
 								<div class="hamburger-inner"></div>
-								
+
 							</div>
-							
+
 						</div>
 
 					</div>
 
 					<div class="col-sm-6 col-10 brand">
-    					
-    				    <?php $brandImage = get_field('logo', 'options');?>	
-    				
+
+    				    <?php $brandImage = get_field('logo', 'options');?>
+
 						<a href="<?php echo home_url(); ?>" alt="<?php wp_title(''); ?>" title="<?php wp_title(''); ?>">
-    						
+
     						<img src="<?php echo $brandImage['url'];?>" alt="" title=""/>
-    						
+
 						</a>
-						
-					</div>                    
+
+					</div>
 
                     <div class="col-sm-3 d-sm-block d-none book-now">
-                        
+
                         <a href="/book-now">Book Now</a>
-                    
+
                     </div>
 
 				</div>
