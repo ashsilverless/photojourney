@@ -46,10 +46,13 @@ get_header();?>
 
     <?php if( have_rows('cross-site_button') ): ?>
     	<?php while( have_rows('cross-site_button') ): the_row(); ?>
+            <?php if (get_sub_field('main_text')):?>
+
             <a href="<?php the_sub_field( 'button_target' );?>" class="cross-site-button" target="_blank">
                 <h2><span>Looking for</span><?php the_sub_field( 'main_text' );?>?</h2>
                 <p><?php the_sub_field( 'sub_text' );?></p>
             </a>
+        <?php endif;?>
         <?php endwhile;?>
     <?php endif;?>
 </div>
