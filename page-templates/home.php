@@ -164,13 +164,15 @@ get_header();?>
                 <div class="row">
 
                     <div class="col-md-6 col-3">
-                        <?php if(get_field('site_version', 'options')=='nepal'){
+                        <?php $mapImage = get_field('learn_more_map');?>
+                        <img src="<?php echo $mapImage['url'];?>"/>
+                        <!--<?php if(get_field('site_version', 'options')=='nepal'){
                             get_template_part( 'template-parts/nepal', 'map');
                         } elseif(get_field('site_version', 'options')=='scotland') {
                             get_template_part( 'template-parts/scotland', 'map');
                         } else {
                             //No map served
-                        }?>
+                        }?>-->
                     </div>
 
                     <div class="col-md-6 col-9">
