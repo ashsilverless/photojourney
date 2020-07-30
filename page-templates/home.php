@@ -414,8 +414,14 @@ endif;?>
     <?php endif; ?>
 
     <div class="text-center mt0 mb3">
-
-        <a href="/gallery" type="button" class="button">See Full Gallery</a>
+        <?php if(get_field('site_version', 'options')=='nepal'){
+            $location = '';
+        } elseif(get_field('site_version', 'options')=='scotland') {
+            $location = '/scotland';
+        } else {
+            //Silence
+        }?>
+        <a href="<?=$location;?>/gallery" type="button" class="button">See Full Gallery</a>
 
     </div>
 

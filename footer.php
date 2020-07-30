@@ -5,7 +5,13 @@
  * @package Photo Journey
  */
 ?>
-
+<?php if(get_field('site_version', 'options')=='nepal'){
+    $location = '';
+} elseif(get_field('site_version', 'options')=='scotland') {
+    $location = '/scotland';
+} else {
+    //Silence
+}?>
 </main>
 <footer class="footer">
 
@@ -186,9 +192,9 @@
 
                     &copy; Photo Journey <?php echo date ('Y');?>
 
-                    <a href="/terms-conditions">Terms</a>
+                    <a href="<?=$location;?>/terms-conditions">Terms</a>
 
-                    <a href="/privacy">Privacy</a>
+                    <a href="<?=$location;?>/privacy">Privacy</a>
 
                 </div>
 

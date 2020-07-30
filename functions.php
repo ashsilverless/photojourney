@@ -9,16 +9,16 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 
 remove_action('wp_print_styles', 'print_emoji_styles');
 
-/** = Enqueue scripts and styles. Another just for the dev branch. = */ 
+/** = Enqueue scripts and styles. Another just for the dev branch. = */
 function photojourney_scripts() {
 	wp_enqueue_style( 'photojourney-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'sl-core-js', get_template_directory_uri() . '/js/compiled.js', array('jquery'), true); 
-	
-    wp_enqueue_script( 'bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), true); 
-    
-    	wp_enqueue_script( 'photojourney-mixitup-filter', get_template_directory_uri() . '/js/mixitup.js', true ); 
-	
+	wp_enqueue_script( 'sl-core-js', get_template_directory_uri() . '/js/compiled.js', array('jquery'), true);
+
+    wp_enqueue_script( 'bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), true);
+
+    	wp_enqueue_script( 'photojourney-mixitup-filter', get_template_directory_uri() . '/js/mixitup.js', true );
+
 }
 add_action( 'wp_enqueue_scripts', 'photojourney_scripts' );
 
@@ -43,10 +43,10 @@ add_action( 'init', 'sl_custom_menu' );
 /* SILVERLESS DASHBOARD */
 
 add_action('wp_dashboard_setup', 'sl_dashboard_widget');
-  
+
 function sl_dashboard_widget() {
 global $wp_meta_boxes;
- 
+
 wp_add_dashboard_widget('custom_help_widget', 'Silverless Support', 'custom_dashboard_help');
 }
 function custom_dashboard_help() {
@@ -126,9 +126,9 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:a
 /**
  * ACF Options Pages.
  */
- 
+
  if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page(array(
 		'page_title' 	=> 'Site Settings',
 		'menu_title'	=> 'Site Settings',
@@ -136,7 +136,7 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:a
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-	
+
 	/*acf_add_options_sub_page(array(
 		'page_title' 	=> 'Header Settings',
 		'menu_title'	=> 'Header',
@@ -158,16 +158,16 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:a
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-	
+
 }
- 
+
 /**
  * Remove Default Menu Items.
  */
 function remove_menus(){
 
   remove_menu_page( 'edit-comments.php' );          //Comments
-  
+
 }
 add_action( 'admin_menu', 'remove_menus' );
 
@@ -238,7 +238,7 @@ function custom_quantity_fields_script(){
 
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
-function md_custom_woocommerce_checkout_fields( $fields ) 
+function md_custom_woocommerce_checkout_fields( $fields )
 {
     $fields['order']['order_comments']['placeholder'] = 'Pop any info you need us to know in here, please';
 
@@ -254,31 +254,31 @@ add_action( 'init' , 'wptp_add_categories_to_attachments' );
 function photojourney_social_sharing_buttons($content) {
 	global $post;
 	if(is_singular() || is_home()){
-	
-		// Get current page URL 
+
+		// Get current page URL
 		$photojourneyURL = urlencode(get_permalink());
- 
+
 		// Get current page title
 		$photojourneyTitle = htmlspecialchars(urlencode(html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8');
 		// $photojourneyTitle = str_replace( ' ', '%20', get_the_title());
-		
+
 		// Get Post Thumbnail for pinterest
 		$photojourneyThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
- 
+
 		// Construct sharing URL without using any script
 		$twitterURL = 'https://twitter.com/intent/tweet?text='.$photojourneyTitle.'&amp;url='.$photojourneyURL.'&amp;via=Crunchify';
 		$facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$photojourneyURL;
- 
+
 		// Based on popular demand added Pinterest too
 		$pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$photojourneyURL.'&amp;media='.$photojourneyThumbnail[0].'&amp;description='.$photojourneyTitle;
- 
+
 		// Add sharing button at the end of page/page content
 		$content .= '<!-- Implement your own superfast social sharing buttons without any JavaScript loading. No plugin required. Detailed steps here: http://crunchify.me/1VIxAsz -->';
 		$content .= '<div class="contactSocials"><h5 class="heading heading__sm">SHARE </h5>';
 		$content .= ' <a href="'. $twitterURL .'" target="_blank"><i class="fab fa-twitter"></i></a>';
 		$content .= '<a href="'.$facebookURL.'" target="_blank"><i class="fab fa-facebook-square"></i></a>';
 		$content .= '</div>';
-		
+
 		return $content;
 	}else{
 		// if not a post/page then don't include sharing button
@@ -297,12 +297,12 @@ add_action('woocommerce_before_cart_totals', 'apply_product_on_coupon');
 
                 if ( $post = get_post( $coupon->id ) ) {
                         if ( !empty( $post->post_excerpt ) ) {?>
-                            
+
                             <div class="text-center mt2">
-                            
+
                             <h2 class="heading heading__md">Great News!</h2>
                                 <p>You have the following coupon applied to your purchase:</p>
-                            
+
                             <?php echo "<div class='discount-coupon'><p>".$coupon->code."</p></div>";
                             echo "<p class='coupon-description'>".$post->post_excerpt."</p></div>";
                         }
@@ -317,7 +317,7 @@ add_action('woocommerce_checkout_before_order_review', 'apply_product_on_coupon'
  * Auto Complete all WooCommerce orders.
  */
 add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order' );
-function custom_woocommerce_auto_complete_order( $order_id ) { 
+function custom_woocommerce_auto_complete_order( $order_id ) {
     if ( ! $order_id ) {
         return;
     }
@@ -340,7 +340,7 @@ function display_applied_coupons( $order, $sent_to_admin, $plain_text, $email ) 
     if( count($coupon_codes) == 1 ){
         $coupon_code = reset($coupon_codes);
         echo '<p>'.__( 'Coupon Used: ').$coupon_code.'<p>';
-    } 
+    }
     // For multiple coupons
     else {
         $coupon_codes = implode( ', ', $coupon_codes);
