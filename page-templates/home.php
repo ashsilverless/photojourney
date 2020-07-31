@@ -6,6 +6,14 @@
  */
 get_header();?>
 
+<?php if(get_field('site_version', 'options')=='nepal'){
+    $location = '';
+} elseif(get_field('site_version', 'options')=='scotland') {
+    $location = '/scotland';
+} else {
+    //Silence
+}?>
+
 <!-- ******************* Hero Content ******************* -->
     <?php
         $frontImg = get_field('background_image_front');
@@ -383,7 +391,7 @@ endif;?>
 
 <div class="text-center mt1 mb3">
 
-    <a href="/team" type="button" class="button">Find Out More</a>
+    <a href="<?=$location;?>/team" type="button" class="button">Find Out More</a>
 
 </div>
 
@@ -414,13 +422,7 @@ endif;?>
     <?php endif; ?>
 
     <div class="text-center mt0 mb3">
-        <?php if(get_field('site_version', 'options')=='nepal'){
-            $location = '';
-        } elseif(get_field('site_version', 'options')=='scotland') {
-            $location = '/scotland';
-        } else {
-            //Silence
-        }?>
+
         <a href="<?=$location;?>/gallery" type="button" class="button">See Full Gallery</a>
 
     </div>
