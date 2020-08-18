@@ -34,7 +34,13 @@ get_header();?>
 
                 <h1 class="heading heading__sm heading__light font800"><?php the_field( 'pre_hero_heading' );?></h1>
                 <h3 class="heading heading__xl heading__light"><?php the_field( 'hero_heading' );?></h3>
-                <h2 class="heading heading__md heading__light heading__normal-case font200"><?php the_field( 'hero_copy' );?></h2>
+                <h2 class="heading heading__md heading__light heading__normal-case font200 <?php if (get_field('add_background_colour')){
+                    echo 'has-background';
+                }?>" style="background-color:<?php the_field( 'add_background_colour' );?>;"><?php the_field( 'hero_copy' );?>
+                    <?php if (get_field('add_background_colour')){?>
+                        <span style="background-color:<?php the_field( 'add_background_colour' );?>;"></span>
+                    <?php }?>
+                </h2>
 
                     <a href="#tickets" type="button" class="button button__prompt mt3">
 
