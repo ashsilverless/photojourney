@@ -71,7 +71,9 @@
                 <?php
             if( have_rows('charity_logo', 'options') ):
             while ( have_rows('charity_logo', 'options') ) : the_row(); ?>
-            <img src="<?php the_sub_field('image');?>"/>
+            <a href="<?php the_sub_field('link_target');?>" target="_blank">
+                <img src="<?php the_sub_field('image');?>"/>
+            </a>
             <?php endwhile; endif;?>
         </div>
     </div>
