@@ -15,7 +15,7 @@
 </main>
 <footer class="footer">
 
-<div class="footer-cta">
+<div class="footer-cta <?php if (get_field('dark_text', 'options') == 1){ echo 'dark-text'; }?>">
 
 <?php $footerImage = get_field('footer_image', 'option');?>
 
@@ -54,8 +54,8 @@
         <div class="socket">
 
 <div class="row partner-logos">
-    <div class="col-md-8">
-        <div class="">
+    <div class="col-md-4">
+        <div class="partners">
             <h4 class="heading heading__md heading__alt-color mb1">Proudly Partnered With</h4>
                 <?php
             if( have_rows('partner_logos', 'options') ):
@@ -64,6 +64,23 @@
             <?php endwhile; endif;?>
         </div>
     </div>
+
+    <div class="col-md-4">
+        <div class="">
+            <h4 class="heading heading__md heading__alt-color mb1">Proudly Supporting</h4>
+                <?php
+            if( have_rows('charity_logo', 'options') ):
+            while ( have_rows('charity_logo', 'options') ) : the_row(); ?>
+            <img src="<?php the_sub_field('image');?>"/>
+            <?php endwhile; endif;?>
+        </div>
+    </div>
+
+
+
+
+
+
 <div class="col-md-4">
     <h4 class="heading heading__md heading__alt-color mb1">Protecting You with ABTOT</h4>
         <?php

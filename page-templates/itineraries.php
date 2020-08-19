@@ -18,13 +18,13 @@ get_header();?>
 
     <div class="row mb3">
 
-        <div class="col-6">
+        <div class="col-6 col-sm mb2">
 
             <img src="<?php the_sub_field('image'); ?>"/>
 
         </div>
 
-        <div class="col-6">
+        <div class="col-6 col-sm">
 
             <h3 class="heading heading__md"><?php the_sub_field('day'); ?> | <?php the_sub_field('location'); ?></h3>
             <?php if (get_sub_field('lat')):?>
@@ -73,7 +73,7 @@ get_header();?>
 
         </div>
 
-        <div class="col-6">
+        <div class="col-6 col-sm">
 
             <h3 class="heading heading__md"><?php the_field('subsequent_days_heading'); ?></h3>
 

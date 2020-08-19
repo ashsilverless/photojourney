@@ -62,7 +62,7 @@ get_header();?>
     	<?php while( have_rows('cross-site_button') ): the_row(); ?>
             <?php if (get_sub_field('main_text')):?>
 
-            <a href="<?php the_sub_field( 'button_target' );?>" class="cross-site-button" target="_blank">
+            <a href="<?php the_sub_field( 'button_target' );?>" class="cross-site-button desktop" target="_blank">
                 <h2><span>Looking for</span><?php the_sub_field( 'main_text' );?>?</h2>
                 <p><?php the_sub_field( 'sub_text' );?></p>
             </a>
@@ -72,6 +72,20 @@ get_header();?>
 </div>
 
 <!-- ******************* Hero Content END ******************* -->
+
+<!-- *************** Mobile Cross Site Button ************** -->
+<?php if( have_rows('cross-site_button') ): ?>
+    <?php while( have_rows('cross-site_button') ): the_row(); ?>
+        <?php if (get_sub_field('main_text')):?>
+
+        <a href="<?php the_sub_field( 'button_target' );?>" class="cross-site-button mobile" target="_blank">
+            <h2><span>Looking for</span><?php the_sub_field( 'main_text' );?>?</h2>
+            <p><?php the_sub_field( 'sub_text' );?></p>
+        </a>
+    <?php endif;?>
+    <?php endwhile;?>
+<?php endif;?>
+<!-- *************** Mobile Cross Site Button END ************** -->
 
 <div class="container">
 
@@ -381,7 +395,7 @@ get_header();?>
 
     $teamImg = get_sub_field('mtt_image'); ?>
 
-    <div class="col-4">
+    <div class="col-4 col-sm team">
 
         <div class="bio">
 

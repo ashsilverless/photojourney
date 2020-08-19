@@ -1091,6 +1091,11 @@ input#billing_address_1::placeholder {
         max-height: 50px;
         margin: 0 1em;
     }
+    .partners {
+        img {
+            max-height: 25px;
+        }
+    }
 }
 
 .download {
@@ -1363,4 +1368,12 @@ article.news {
 
 .mapboxgl-popup-close-button {
     display: none;
+}
+
+.scotland {
+    .col-sm.team {
+        &:first-of-type {
+            margin-left: 16.5%;
+        }
+    }
 }
