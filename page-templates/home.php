@@ -215,7 +215,9 @@ get_header();?>
                         <a href="<?php the_field( 'button_target' );?>" type="button" class="button mt1 mb1"><?php the_field( 'button_text' );?></a>
 
                     </div>
-                    <img src="<?php echo $detailMap['url'];?>" class="detail-map"/>
+                    <div class="col-12">
+                        <img src="<?php echo $detailMap['url'];?>" class="detail-map"/>
+                    </div>
                 </div><!--r-->
 
             </div>
