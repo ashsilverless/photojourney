@@ -195,7 +195,7 @@ get_header();?>
                         <?php $mapImage = get_field('learn_more_map');
                         $detailMap = get_field('detail_map');
                         ?>
-                        <img src="<?php echo $mapImage['url'];?>" class="detail-map"/>
+                        <img src="<?php echo $mapImage['url'];?>" />
 
                         <!--<?php if(get_field('site_version', 'options')=='nepal'){
                             get_template_part( 'template-parts/nepal', 'map');
@@ -215,7 +215,7 @@ get_header();?>
                         <a href="<?php the_field( 'button_target' );?>" type="button" class="button mt1 mb1"><?php the_field( 'button_text' );?></a>
 
                     </div>
-                    <img src="<?php echo $detailMap['url'];?>"/>
+                    <img src="<?php echo $detailMap['url'];?>" class="detail-map"/>
                 </div><!--r-->
 
             </div>
