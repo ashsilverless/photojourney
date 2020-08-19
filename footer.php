@@ -60,8 +60,11 @@
                 <?php
             if( have_rows('partner_logos', 'options') ):
             while ( have_rows('partner_logos', 'options') ) : the_row(); ?>
-            <img src="<?php the_sub_field('image');?>"/>
+            <div class="col-12">
+                <img src="<?php the_sub_field('image');?>"/>
+            </div>
             <?php endwhile; endif;?>
+
         </div>
     </div>
 
@@ -71,26 +74,26 @@
                 <?php
             if( have_rows('charity_logo', 'options') ):
             while ( have_rows('charity_logo', 'options') ) : the_row(); ?>
-            <a href="<?php the_sub_field('link_target');?>" target="_blank">
-                <img src="<?php the_sub_field('image');?>"/>
-            </a>
+            <div class="col-12">
+                <a href="<?php the_sub_field('link_target');?>" target="_blank">
+                    <img src="<?php the_sub_field('image');?>"/>
+                </a>
+            </div>
+
             <?php endwhile; endif;?>
         </div>
     </div>
-
-
-
-
-
 
 <div class="col-md-4">
     <h4 class="heading heading__md heading__alt-color mb1">Protecting You with ABTOT</h4>
         <?php
     if( have_rows('travel_accrediations', 'options') ):
     while ( have_rows('travel_accrediations', 'options') ) : the_row(); ?>
+    <div class="col-12">
     <a href="<?php the_sub_field('link_target');?>" target="_blank">
         <img src="<?php the_sub_field('image');?>"/>
     </a>
+    </div>
     <?php endwhile; endif;?>
 </div>
 </div>
