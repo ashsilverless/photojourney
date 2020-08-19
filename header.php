@@ -6,6 +6,13 @@
  */
 
 ?>
+<?php if(get_field('site_version', 'options')=='nepal'){
+    $location = '';
+} elseif(get_field('site_version', 'options')=='scotland') {
+    $location = '/scotland';
+} else {
+    //Silence
+}?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 
@@ -91,7 +98,7 @@
 
                     <div class="col-sm-3 d-sm-block d-none book-now">
 
-                        <a href="/scotland/book-now">Book Now</a>
+                        <a href="<?=$location;?>/book-now">Book Now</a>
 
                     </div>
 
