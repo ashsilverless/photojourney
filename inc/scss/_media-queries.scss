@@ -280,7 +280,15 @@ footer .wrapper-hero.home {
 }
 
 .partner-logos img {
-    max-height: 20px;
+    max-height: 50px;
+    margin-bottom: 2rem;
+}
+
+.partner-logos .partners img {
+    margin-bottom: 1rem;
+    &:last-of-type {
+        margin-bottom: 2rem;
+    }
 }
 
 .logo-holder {
