@@ -195,7 +195,7 @@ get_header();?>
                         <?php $mapImage = get_field('learn_more_map');
                         $detailMap = get_field('detail_map');
                         ?>
-                        <img src="<?php echo $mapImage['url'];?>"/>
+                        <img src="<?php echo $mapImage['url'];?>" class="detail-map"/>
 
                         <!--<?php if(get_field('site_version', 'options')=='nepal'){
                             get_template_part( 'template-parts/nepal', 'map');
