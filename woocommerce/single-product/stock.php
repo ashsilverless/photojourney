@@ -23,7 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php $stock_amount = $product->get_stock_quantity();?>
-                
-<p class="heading heading__xs font400 mt0 mb0 places">
-    <?php if($stock_amount <=7 )
-                        { echo $stock_amount; }?> Places Available</p>
+
+<p class="heading heading__xs font400 mt0 mb1 places">
+    <?php echo $stock_amount;?> Places Available</p>
